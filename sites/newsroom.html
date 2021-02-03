@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <title>COVID-19 | NewsRoom</title>
+      <link rel="icon" href="image/icon.png" type="image/icon">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="../css/main.css">
+      <link rel="stylesheet" type="text/css" href="../css/newsroom.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <style>
+          body {
+              background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../image/virus.jpg');
+              height: 100%;
+              background-repeat: no-repeat;
+              background-attachment: fixed;
+              background-size: cover;
+              background-position: center;
+          }
+      </style>
+      
+  </head>
+        
+  <body onload="renderDate()">
+    <div class="side_div" id="side_div">
+      <div class="side_bar" id="side_bar">
+          <div class="calendar">
+              <div class="month">
+                <div class="prev" onclick="moveDate('prev')">
+                  <span class="arrow">&#10094</span>
+                </div>
+                <div class="monthname">
+                  <h2 class="month_name" id="month"></h2>
+                </div>
+                <div class="next" onclick="moveDate('next')">
+                  <span class="arrow">&#10095</span>
+                </div>
+              </div>
+              <div class="weekdays">
+                <div>Sun</div>
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+              </div>
+              <div class="days"></div>
+          </div>
+          <script src="../javascript/calendar.js"></script>
+          <div class="old_date old_date_first"><p id="old_news_date">Tue 21 Jun 2020</p><a href="#news21jun" onclick="hideMenuBar()"><p id="old_news_covid">COVID-19</p></a></div>
+          <div class="old_date old_date_second"><p id="old_news_date">Tue 20 Jun 2020</p><a href="#news20jun" onclick="hideMenuBar()"><p id="old_news_covid">COVID-19</p></a></div>
+          <div class="old_date old_date_third"><p id="old_news_date">Tue 19 Jun 2020</p><a href="#news19jun" onclick="hideMenuBar()"><p id="old_news_covid">COVID-19</p></a></div>
+          <div class="old_date old_date_forth"><p id="old_news_date">Tue 18 Jun 2020</p><a href="#news18jun" onclick="hideMenuBar()"><p id="old_news_covid">COVID-19</p></a></div>
+          <div class="old_date old_date_fifth"><p id="old_news_date">Tue 17 Jun 2020</p><a href="#news17jun" onclick="hideMenuBar()"><p id="old_news_covid">COVID-19</p></a></div>
+          <div class="old_date old_date_sixth"><p id="old_news_date">Tue 16 Jun 2020</p><a href="#news16jun" onclick="hideMenuBar()"><p id="old_news_covid">COVID-19</p></a></div>
+          <script>
+            function hideMenuBar() {
+                if(screen.width <= 1280) {
+                    document.getElementById("side_div").style.left= "-425px";
+                }
+            }
+        </script>
+      </div>
+      <div class="side_bar_close">
+          <p class="close_btn"><svg onclick="hideMenu()" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg></p>
+          <script>
+              function hideMenu() {                    
+                  document.getElementById("side_div").style.left= "-425px";
+              }
+          </script>
+      </div>
+    </div>
+    <!-- 21_JUN_2020 -->
+    <section class="section" id="news21jun">
+        <div class="left_inner_section">
+            <svg onclick="showMenu()" class="menu_burger"  fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px" height="50px"><path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"/></svg>
+        </div>
+        <script>
+            function showMenu() {
+                document.getElementById("side_div").style.left= "0px";
+            }
+        </script>
+        <div class="right_inner_section">
+            <div class="detail_section">
+                <h1 class="news_heading">Covid-19: What you need to know today</h1>
+                <img class="news_img" src="../image/news21jun200805.png">
+                <p class="news_details news_line_01">
+                    June 20. There’s no breaking it gently; things are getting worse around the world in terms of the spread of the coronavirus disease.
+                </p><br>
+                <p class="news_details news_line_02">
+                    Sure, the disease isn’t the mystery it once was; every passing day increases our knowledge of the Sars-CoV-2 virus and the Covid-19 disease, and while we may still not have a cure.
+                </p><br>
+                <p class="news_details news_line_03">
+                    we have a fairly good idea of which medicines and lines of treatment work and which don’t (and there’s new information almost every other day). There’s a general agreement around the world that doctors have become better at saving lives.
+                </p><br>
+                <p class="news_details news_line_04">
+                    But the disease is raging though the world.
+                </p><br>
+                <p class="news_details news_line_05">
+                    Numbers from three different sources tell the same story.
+                </p>
+            </div>
+            <div class="date_section">
+                <a class="news_link" href="https://www.hindustantimes.com/india-news/covid-19-what-you-need-to-know-today/story-S5R873CPT2LzQKkbxx8zEJ.html" target="_blank">Read more about the news</a>
+                <p class="news_date">News Updated: Jun 21, 2020 08:05 IST</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="left_inner_section">
+            <svg onclick="showMenu()" class="menu_burger"  fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px" height="50px"><path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"/></svg>
+        </div>
+        <script>
+            function showMenu() {
+                document.getElementById("side_div").style.left= "0px";
+            }
+        </script>
+        <div class="right_inner_section">
+            <div class="detail_section">
+                <h1 class="news_heading">Covid-19 treatments at private hospitals to get cheaper</h1>
+                <img class="news_img" src="../image/news21jun200345.png">
+                <p class="news_details news_line_01">
+                    The Delhi government said on Saturday that beds for Covid-19 patients at private hospitals will be subsidised, with treatment charges being reduced by 60-67%. 
+                </p><br>
+                <p class="news_details news_line_02">
+                    The new rates, to be charged by all private hospitals with immediate effect, will be applicable to all Covid-19 beds at a private hospitals for up to 60% of its total capacity.
+                </p><br>
+                <p class="news_details news_line_03">
+                    “100% COVID beds shall be subsidised up to an upper limit of 60% of total hospital capacity,” Delhi deputy chief minister Manish Sisodia said on Saturday after the Delhi Disaster Management Authority (DDMA), chaired by lieutenant governor Anil Baijal, cleared the move.
+                </p><br>
+                <p class="news_details news_line_04">
+                    The rates now have been capped between Rs 8,000 (non-NABH accredited hospitals) and Rs 10,000 (NABH accredited hospitals including entry level facilities) a day for an isolation bed, Rs 13,000-15,000 a day for a bed at an intensive care unit (ICU).
+                </p><br>
+                <p class="news_details news_line_05">
+                    Rs 15,000-18,000 a day for an ICU bed with ventilator. Until this order was issued on Saturday evening, the fee for an isolation bed in Delhi was Rs 24,000-25,000 a day.
+                </p>
+            </div>
+            <div class="date_section">
+                <a class="news_link" href="https://www.hindustantimes.com/delhi-news/covid-19-treatments-at-private-hospitals-to-get-cheaper/story-vVU5i0COD3OpIUrcM9xJEL.html" target="_blank">Read more about the news</a>
+                <p class="news_date">News Updated: Jun 21, 2020 03:45 IST</p>
+            </div>
+        </div>
+    </section>
+    <!-- 20_JUN_2020 -->
+    <section class="section" id="news20jun">
+        <div class="left_inner_section">
+            <svg onclick="showMenu()" class="menu_burger"  fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px" height="50px"><path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"/></svg>
+        </div>
+        <script>
+            function showMenu() {
+                document.getElementById("side_div").style.left= "0px";
+            }
+        </script>
+        <div class="right_inner_section">
+            <div class="detail_section">
+                <h1 class="news_heading">Maharashtra sees 3,874 new Covid-19 cases, state count jumps to over 1.28 lakh</h1>
+                <img class="news_img" src="../image/news20jun202359.png">
+                <p class="news_details news_line_01">
+                    Maharashtra detected 3,874 new Covid-19 infections on Saturday, its highest single-day spike so far, taking its coronavirus tally to 1,28,205, the state health department said. 
+                </p><br>
+                <p class="news_details news_line_02">
+                    The state also recorded 160 deaths from the infectious disease while the death toll crossed the 6000-mark.
+                </p><br>
+                <p class="news_details news_line_03">
+                    Capital city Mumbai’s coronavirus count touched 65,329, crossing the 65,000-mark with1190 fresh Covid-19 cases recorded in the last 24 hours.
+                </p><br>
+                <p class="news_details news_line_04">
+                    Mumbai’s death toll touched 3,561 with as many as 136 people succumbing to the deadly pathogen.
+                </p><br>
+                <p class="news_details news_line_05">
+                    Mumbai’s largest slum, Dharavi, reported seven new Covid-19 cases, taking the total number of patients to 2,158. As many as 78 deaths have been reported in the area, the Brihanmumbai Municipal Corporation’s data said.
+                </p>
+            </div>
+            <div class="date_section">
+                <a class="news_link" href="https://www.hindustantimes.com/india-news/maharashtra-sees-3-874-new-covid-19-cases-state-count-jumps-to-over-1-28-lakh/story-qTyFN3NRXhNA9UtEsb8rgP.html" target="_blank">Read more about the news</a>
+                <p class="news_date">News Updated: Jun 20, 2020 23:59 IST</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="left_inner_section">
+            <svg onclick="showMenu()" class="menu_burger"  fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px" height="50px"><path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"/></svg>
+        </div>
+        <script>
+            function showMenu() {
+                document.getElementById("side_div").style.left= "0px";
+            }
+        </script>
+        <div class="right_inner_section">
+            <div class="detail_section">
+                <h1 class="news_heading">Telangana sees 546 new Covid-19 cases, 5 deaths; state tally crosses 7,000-mark</h1>
+                <img class="news_img" src="../image/news20jun202304.png">
+                <p class="news_details news_line_01">
+                    Telangana reported 546 fresh Covid-19 cases and 5 deaths on Saturday, taking the total number of coronavirus cases in the state to 7,072, according to the Public Health and Family Welfare department of the state.
+                </p><br>
+                <p class="news_details news_line_02">
+                    With Saturday’s five new fatalities, the death toll in Telangana has now climbed to 203.
+                </p><br>
+                <p class="news_details news_line_03">
+                    There are at present 3,363 active Covid-19 cases in the state and a total of 3,506 people have been cured and discharged.
+                </p><br>
+                <p class="news_details news_line_04">
+                    In the last 24 hours, 154 patients have recovered from the coronavirus infection.
+                </p><br>
+                <p class="news_details news_line_05">
+                    On Friday, in a major spike in coronavirus cases, Telangana saw 499 new Covid-19 positive patients and three deaths being reported, taking the infection count in the state to 6,526 and death toll to 198.
+                </p>
+            </div>
+            <div class="date_section">
+                <a class="news_link" href="https://www.hindustantimes.com/india-news/telangana-sees-546-new-covid-19-cases-5-deaths-state-tally-crosses-7-000-mark/story-mrVINzwI4k61pZr6zcA5hM.html" target="_blank">Read more about the news</a>
+                <p class="news_date">News Updated: Jun 20, 2020 23:04 IST</p>
+            </div>
+        </div>
+    </section>
+    <!-- 19_JUN_2020 -->
+    <section class="section" id="news19jun">
+        <div class="left_inner_section">
+            <svg onclick="showMenu()" class="menu_burger"  fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px" height="50px"><path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"/></svg>
+        </div>
+        <script>
+            function showMenu() {
+                document.getElementById("side_div").style.left= "0px";
+            }
+        </script>
+        <div class="right_inner_section">
+            <div class="detail_section">
+                <h1 class="news_heading">With 138 new Covid-19 cases, Bihar’s count rises to 7,178; death toll at 49</h1>
+                <img class="news_img" src="../image/news19jun202132.png">
+                <p class="news_details news_line_01">
+                    Bihar reported 138 new Covid-19 cases on Friday and two deaths from the disease were recorded during the past 24 hours, taking the total number of those infected with coronavirus in the state to 7,178 while the death toll climbed to 49.
+                </p><br>
+                <p class="news_details news_line_02">
+                    A 58-year-old male from Nautan block of Saran district died at the Nalanda Medical College Hospital (NMCH), a dedicated Covid special facility in the state capital Patna, on Friday.
+                </p><br>
+                <p class="news_details news_line_03">
+                    Another male, a 22-year-old from Nawada town died at the Patna Medical College Hospital late Thursday evening.
+                </p><br>
+                <p class="news_details news_line_04">
+                    “The 58-year-old Saran resident had a travel history of Delhi and showed symptoms of breathlessness,” said Dr Mukul Kumar Singh, nodal officer of coronavirus at the NMCH.
+                </p><br>
+                <p class="news_details news_line_05">
+                    
+                </p>
+            </div>
+            <div class="date_section">
+                <a class="news_link" href="https://www.hindustantimes.com/patna/with-138-new-covid-19-cases-bihar-s-count-rises-to-7-178-death-toll-at-49/story-9uLwaIzdLgxJe3JXum0mQP.html" target="_blank">Read more about the news</a>
+                <p class="news_date">News Updated: Jun 19, 2020 21:32 IST</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="left_inner_section">
+            <svg onclick="showMenu()" class="menu_burger"  fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px" height="50px"><path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"/></svg>
+        </div>
+        <script>
+            function showMenu() {
+                document.getElementById("side_div").style.left= "0px";
+            }
+        </script>
+        <div class="right_inner_section">
+            <div class="detail_section">
+                <h1 class="news_heading">After a lull, 17 new Covid-19 cases emerge in Mumbai’s Dharavi, case count at 2,151</h1>
+                <img class="news_img" src="../image/news19jun202106.png">
+                <p class="news_details news_line_01">
+                    Seventeen new Covid-19 positive cases were reported on Friday in Mumbai’s Dharavi area, taking the total number of coronavirus cases in the slums to 2,151, data from the Brihanmumbai Municipal Corporation (BMC) said.
+                </p><br>
+                <p class="news_details news_line_02">
+                    In the last 24 hours, one person has succumbed to the deadly coronavirus infection, taking the death toll in Asia’s largest slum dwelling to 79.
+                </p><br>
+                <p class="news_details news_line_03">
+                    A day earlier on Thursday, 28 new Covid-19 cases were reported in Dharavi taking the total number of cases to 2,134. A total of 78 people had succumbed to the disease in the area so far, the BMC data said.
+                </p><br>
+                <p class="news_details news_line_04">
+                    Maharashtra, which is the worst-hit state by the coronavirus pandemic, on Thursday, recorded the highest single-day spike with 3,752 new Covid-19 cases.
+                </p><br>
+                <p class="news_details news_line_05">
+                    The total number of coronavirus cases now stands at 1,20,504, the state health department said.
+                </p>
+            </div>
+            <div class="date_section">
+                <a class="news_link" href="https://www.hindustantimes.com/india-news/after-a-lull-17-new-covid-19-cases-emerge-in-mumbai-s-dharavi-case-count-at-2-151/story-q9VALH0y68WRxRXQfWgM8M.html" target="_blank">Read more about the news</a>
+                <p class="news_date">News Updated: Jun 19, 2020 21:06 IST</p>
+            </div>
+        </div>
+    </section>
+    <!-- 18_JUN_2020 -->
+    <section class="section" id="news18jun">
+        <div class="left_inner_section">
+            <svg onclick="showMenu()" class="menu_burger"  fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px" height="50px"><path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"/></svg>
+        </div>
+        <script>
+            function showMenu() {
+                document.getElementById("side_div").style.left= "0px";
+            }
+        </script>
+        <div class="right_inner_section">
+            <div class="detail_section">
+                <h1 class="news_heading">Covid-19 vaccine update: Russia begins clinical trials, Gilead to enrol pediatric patients in remdesivir testing</h1>
+                <img class="news_img" src="../image/news18jun201249.png">
+                <p class="news_details news_line_01">
+                    With global coronavirus cases crossing the 8 million-mark, the need for an anti-Covid-19 vaccine becomes more urgent. Drug-makers and experts across the world are ramping up efforts to arrive at the potential vaccine against Covid-19.
+                </p><br>
+                <p class="news_details news_line_02">
+                    From experimental drug remdesivir making strides to generic steroid drug dexamethasone emerging as the first Covid-19 drug, the race to developing the antidote to Covid-19 is getting more interesting by the day.
+                </p><br>
+                <p class="news_details news_line_03">
+                    Drugmaker Gilead Sciences said it will soon begin enrolment of pediatric patients with moderate-to-severe Covid-19 in a late-stage study testing its experimental drug, remdesivir.
+                </p><br>
+                <p class="news_details news_line_04">
+                    Clinical trials of a Russian coronavirus vaccine started on Wednesday, the Health Ministry said in a statement.
+                </p><br>
+                <p class="news_details news_line_05">
+                    The European Union (EU) is planning to accelerate the development of Covid-19 vaccines through advance purchase agreements with promising medical companies, the bloc announced in a statement on Wednesday.
+                </p>
+            </div>
+            <div class="date_section">
+                <a class="news_link" href="https://www.hindustantimes.com/world-news/covid-19-vaccine-update-russia-begins-clinical-trials-drugmaker-gilead-to-enrol-pediatric-patients-in-remdesivir-testing/story-Ma59Cf2oNvOlL0xhfSK8MN.html" target="_blank">Read more about the news</a>
+                <p class="news_date">News Updated: Jun 18, 2020 12:49 IST</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="left_inner_section">
+            <svg onclick="showMenu()" class="menu_burger"  fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px" height="50px"><path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"/></svg>
+        </div>
+        <script>
+            function showMenu() {
+                document.getElementById("side_div").style.left= "0px";
+            }
+        </script>
+        <div class="right_inner_section">
+            <div class="detail_section">
+                <h1 class="news_heading">Covid-19: What you need to know today</h1>
+                <img class="news_img" src="../image/news18jun200608.png">
+                <p class="news_details news_line_01">
+                    Were we wrong? More pertinently (at least for me, and, for you, Constant Reader), was I wrong?
+                </p><br>
+                <p class="news_details news_line_02">
+                    Time and again, I have referred to India’s low death rate from the coronavirus disease in comparison to the death rates in other countries as a sort of silver lining.
+                </p><br>
+                <p class="news_details news_line_03">
+                    This could still hold true — there are large studies underway to find out whether the BCG vaccine (nearly universally administered in India) can help people fight off Covid-19.
+                </p><br>
+                <p class="news_details news_line_04">
+                    Only now, it turns out (and the band said it best), every silver lining has a touch of grey.
+                </p><br>
+                <p class="news_details news_line_05">
+                    India’s death rate has increased from 2.79% on June 1 to 3.37% on June 16.
+                </p>
+            </div>
+            <div class="date_section">
+                <a class="news_link" href="https://www.hindustantimes.com/india-news/covid-19-what-you-need-to-know-today/story-VAfEJOZOGeH9EUJp17i2HO.html" target="_blank">Read more about the news</a>
+                <p class="news_date">News Updated: Jun 18, 2020 06:08 IST</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 17_JUN_2020 -->
+    <section class="section" id="news17jun">
+        <div class="left_inner_section">
+            <svg onclick="showMenu()" class="menu_burger"  fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px" height="50px"><path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"/></svg>
+        </div>
+        <script>
+            function showMenu() {
+                document.getElementById("side_div").style.left= "0px";
+            }
+        </script>
+        <div class="right_inner_section">
+            <div class="detail_section">
+                <h1 class="news_heading">Hotel staff, unsung warriors: Coping with Covid-19 in a new role</h1>
+                <img class="news_img" src="../image/news17jun201933.png">
+                <p class="news_details news_line_01">
+                    Who are the corona warriors? We know about the cops and doctors who are putting themselves beyond the call of duty,
+                </p><br>
+                <p class="news_details news_line_02">
+                    but wondered what has that hotel bellboy or hotel room service staff has to go through when all of a sudden asked to play the role of nurses for guests who need to be in quarantine or are asymptomatic carriers of Covid-19?
+                </p><br>
+                <p class="news_details news_line_03">
+                    The biggest challenge is to keep the team motivated during these tough times. Mentally,
+                </p><br>
+                <p class="news_details news_line_04">
+                    we all understood that this is the only hope to get some revenue to cover the basic costs of the hotel. The only tough part was to be prepared mentally. 
+                </p><br>
+                <p class="news_details news_line_05">
+                    We live with our families and the fear of getting them affected someday because of us kills us,” says an employee of a Delhi hotel, who wishes to remain anonymous.
+                </p>
+            </div>
+            <div class="date_section">
+                <a class="news_link" href="https://www.hindustantimes.com/more-lifestyle/hotel-staff-unsung-warriors-coping-with-covid-19-in-a-new-role/story-3lgjxYIh2zYctx9mVTbdjM.html" target="_blank">Read more about the news</a>
+                <p class="news_date">News Updated: Jun 17, 2020 19:33 IST</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="left_inner_section">
+            <svg onclick="showMenu()" class="menu_burger"  fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px" height="50px"><path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"/></svg>
+        </div>
+        <script>
+            function showMenu() {
+                document.getElementById("side_div").style.left= "0px";
+            }
+        </script>
+        <div class="right_inner_section">
+            <div class="detail_section">
+                <h1 class="news_heading">India’s Covid-19 cases hit 300,000 mark</h1>
+                <img class="news_img" src="../image/news17jun200414.png">
+                <p class="news_details news_line_01">
+                    India became only the fourth country in the world -- after the United States, Brazil and Russia -- to report more than 300,000 cases of the coronavirus disease (Covid-19) on Friday,
+                </p><br>
+                <p class="news_details news_line_02">
+                    103 days since the start of the outbreak in the country, with the latest 100,000 cases added in just the last 10 days, according to HT’s Covid-19 dashboard.
+                </p><br>
+                <p class="news_details news_line_03">
+                    The country reported 11,172 new cases and 384 new deaths on Friday, taking the total number of cases to 309,324, and deaths to 8,882.
+                </p><br>
+                <p class="news_details news_line_04">
+                    More than 57% of all cases in India can be traced to just three states – Maharashtra, Delhi and Tamil Nadu 
+                </p><br>
+                <p class="news_details news_line_05">
+                    — a fact that highlights how the spread of the virus in the country has largely been centered in a handful of hot spot regions.
+                </p>
+            </div>
+            <div class="date_section">
+                <a class="news_link" href="https://www.hindustantimes.com/india-news/india-s-covid-cases-hit-300-000-mark/story-n07v2KBTzwslzt6tZd6A6J.html" target="_blank">Read more about the news</a>
+                <p class="news_date">News Updated: Jun 17, 2020 04:14 IST</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 16_JUN_2020 -->
+    <section class="section" id="news16jun">
+        <div class="left_inner_section">
+            <svg onclick="showMenu()" class="menu_burger"  fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px" height="50px"><path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"/></svg>
+        </div>
+        <script>
+            function showMenu() {
+                document.getElementById("side_div").style.left= "0px";
+            }
+        </script>
+        <div class="right_inner_section">
+            <div class="detail_section">
+                <h1 class="news_heading">‘Covid-19 situation worsening with each passing day,’ says SC</h1>
+                <img class="news_img" src="../image/news16jun200835.png">
+                <p class="news_details news_line_01">
+                    With 10,667 cases and 380 fatalities in the last 24 hours, the coronavirus infections in India soared to 3,43,091 with death toll rising to 9,900 on Tuesday.
+                </p><br>
+                <p class="news_details news_line_02">
+                    Of the total, 1,53,178 are active cases while 1,80,012 people have been cured and discharged so far, according to the health ministry.
+                </p><br>
+                <p class="news_details news_line_03">
+                    Around 52.46 per cent patients have recovered so far.
+                </p><br>
+                <p class="news_details news_line_04">
+                    Statewise, of the 380 new casualties, Maharashtra accounted for the highest 178 fatalities followed by Delhi at 73, Tamil Nadu at 44, Gujarat 28, Haryana 12, West Bengal 10, Rajasthan 9 and
+                </p><br>
+                <p class="news_details news_line_05">
+                    Madhya Pradesh 6. Andhra Pradesh and Punjab have reported 4 fatalities each, Jammu and Kashmir and Karnataka 3 each, Telangana 2 and Bihar, Chandigarh, Himachal Pradesh and Kerala 1 each.
+                </p>
+            </div>
+            <div class="date_section">
+                <a class="news_link" href="https://indianexpress.com/article/india/coronavirus-india-updates-16-june-pm-modi-cms-satyender-jain-lockdown-covid-19-mumbai-delhi-6461460/" target="_blank">Read more about the news</a>
+                <p class="news_date">News Updated: Jun 16, 2020 08:35 IST</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.min.js" integrity="sha256-RGlAwHKG24hsj1109SGQgvR+Orx7u8c6zyYH4Tk3ydU=" crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            $.scrollify({
+                section : ".section",
+            });
+        });
+    </script>
+  </body>
+</html>

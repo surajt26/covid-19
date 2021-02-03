@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- head -->
+
+    <head>
+        <title>COVID-19 | Information</title>
+        <link rel="icon" href="image/icon.png" type="image/icon">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../css/main.css">
+        <link rel="stylesheet" type="text/css" href="../css/information.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body {
+                background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../image/virus.jpg');
+                height: 100%;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+                background-position: center;
+
+                
+            }
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    
+    <!-- body -->
+
+    <body>
+        <a href="#take_top">
+            <div class="bookmark_upper">
+                <p id="toparrow"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-up" class="svg-inline--fa fa-arrow-up fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"></path></svg></p>
+            </div>
+        </a>
+        <div class="menuCover" id="menuCover">
+            <div><p style="float:right;"><span onclick="menuHide()">X</span></p></div>
+            <div><p><a href="../index.html">Home</a></p></div>
+            <div><p><a href="newsroom.html" target="_blank">NewsRoom</a></p></div>
+            <div><p><a class="activeBar" href="information.html">Information</a></p></div>
+            <div><p><a href="indiameter.html">IndiaMeter</a></p></div>
+            <div><p><a href="worldmeter.html">WorldMeter</a></p></div>
+            <div><p><a href="emergenciescontact.html">EmergenciesContact</a></p></div>
+            <div><p><a href="contactinfo.html">ContactUs</a></p></div>
+        </div>
+
+        <header id="take_top">
+            <a class="logo" href="../index.html">Coronavirus (COVID-19)</a>
+        </header>
+
+        <div class="menuBar">
+            <span onclick="menuShow()">Menu</span>
+        </div>
+        <script>
+            function menuShow() {
+              var x = document.getElementById("menuCover");
+              if (x.style.display === "none") {
+                x.style.display = "grid";
+              } else {
+                x.style.display = "none";
+              }
+            }
+            function menuHide() {
+              var x = document.getElementById("menuCover");
+              if (x.style.display === "grid") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "grid";
+              }
+            }
+        </script>
+
+        <ul class="menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="newsroom.html" target="_blank">NewsRoom</a></li>
+            <li><a class="active" href="sites/information.html">Information</a></li>
+            <li><a href="indiameter.html">IndiaMeter</a></li>
+            <li><a href="worldmeter.html">WorldMeter</a></li>
+            <li><a href="emergenciescontact.html">EmergenciesContact</a></li>
+            <li><a href="contactinfo.html">Contact Info</a></li>
+        </ul>
+
+        <div class="coronavirusimg">
+            <a href="https://pin.it/33HASU3" target="_blank"><svg id="pintrest" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="pinterest" class="svg-inline--fa fa-pinterest fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3.8-3.4 5-20.3 6.9-28.1.6-2.5.3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"></path></svg></a>
+            <img src="../image/awareness01.jpg">
+        </div>
+
+        
+        
+        <div class="information">
+            <h1 class="big">What to know about<br>coronaviruses</h1><br><br>
+            <div class="sub_menus_container">
+                <div class="sub_menu"><a class="sub_menu_link" href="#definition"><p>Definition</p></a></div>
+                <div class="sub_menu"><a class="sub_menu_link" href="#covid19"><p>COVID-19</p></a></div>
+                <div class="sub_menu"><a class="sub_menu_link" href="#symptoms"><p>Symptoms</p></a></div>
+                <div class="sub_menu"><a class="sub_menu_link" href="#types"><p>Types</p></a></div>
+                <div class="sub_menu"><a class="sub_menu_link" href="#transmission"><p>Transmission</p></a></div>
+                <div class="sub_menu"><a class="sub_menu_link" href="#sars"><p>SARS</p></a></div>
+                <div class="sub_menu"><a class="sub_menu_link" href="#mers"><p>MERS</p></a></div>
+                <div class="sub_menu"><a class="sub_menu_link" href="#prevention"><p>Prevnetion</p></a></div>
+            </div><br><br>
+            <div class="artical">
+                <p>This article was updated on May 7, 2020</p>
+            </div>
+            <br><br>
+            <p class="para01 paradif">
+                Coronaviruses typically affect the respiratory tracts of birds and mammals, including humans.<br>
+                Doctors associate them with the common cold, bronchitis, pneumonia, 
+                severe acute respiratory syndrome (SARS), and coronavirus disease 2019 (COVID-19).<br>
+                These viruses can also affect the gut.
+            </p>
+            <br><br>
+            <p class="para02 para">
+                Coronaviruses usually cause the common cold, though they can be responsible for more severe illnesses.<br><br>
+                Over the past 70 years, scientists have found that these viruses can infect mice, rats, dogs, cats, turkeys, horses, pigs, and cattle. Sometimes, these animals transmit the viruses to humans.<br><br>
+                Most recently, authorities identified a new coronavirus outbreak in China that has now reached other countries. The virus is called severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) and it can cause COVID-19.<br><br>
+                In this article, we explain the different types of human coronavirus, their symptoms, and how people transmit them. We also focus on three particularly dangerous diseases caused by coronaviruses: COVID-19, SARS, and Middle East respiratory syndrome (MERS).<br><br>
+            </p>
+            <span id="definition"></span>
+            <span></span>
+            <br><br><br><br><br>
+            <h1>What is a coronavirus?</h1><br><br>
+            <div class="imgdiv">
+                <a href="https://pin.it/33HASU3" target="_blank"><svg id="pintrest" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="pinterest" class="svg-inline--fa fa-pinterest fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3.8-3.4 5-20.3 6.9-28.1.6-2.5.3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"></path></svg></a>
+                <img src="../image/coronatemp.jpg">
+                <br>
+                <span class="imgdown">The infrared thermometers are used to detect the body temperature in case of fever, one of the symptoms of coronavirus.</span>
+            </div>
+            <br><br>
+            <p class="para03 para">
+                Researchers first identified a coronavirus in 1937, isolating one that was responsible for a type of bronchitis in birds that had the potential to devastate poultry stocks.<br><br>
+                Scientists found evidence of human coronaviruses in the 1960s, in the noses of people with the common cold.<br><br>
+                Human coronaviruses that are particularly prevalent include 229E, NL63, OC43, and HKU1.<br><br>
+                The name “coronavirus” comes from the crown-like projections on their surfaces. “Corona” in Latin means “halo” or “crown.”<br><br>
+                Among humans, coronavirus infections most often occur during the winter months and early spring.
+            </p>
+            <span id="covid19"></span>
+            <span></span>
+            <br><br><br><br><br>
+            <h1>COVID-19</h1><br><br>
+            <p class="para04 para">
+                In 2019, the Centers for Disease Control and Prevention (CDC) started monitoring the outbreak of a new coronavirus, SARS-CoV-2, which causes COVID-19. Authorities first identified the virus in Wuhan, China.<br><br>
+                Since then, the virus has spread to nearly every country, leading the World Health Organization (WHO) to declare a pandemic.<br><br>
+                The new coronavirus has been responsible for millions of infections globally, causing hundreds of thousands of deaths. The United States has seen the highest number of these deaths.<br><br>
+                The first people with COVID-19 had links to an animal and seafood market. This suggests that animals initially transmitted the virus to humans. Then, people with no connections to the market developed the disease, confirming that humans can pass the virus to each other.<br><br>
+                Read about how pangolins could be the source of COVID-19 here.<br><br>
+                On February 17, 2020, the director-general of the WHO presented the following updated estimates of the severity of COVID-19 cases, using data from 44,000 people who had received confirmed diagnoses:
+            </p><br><br>
+            <table>
+                <tr>
+                    <th>Stage of severity</th><th>Rough percentage of people<br>with COVID-19</th>
+                </tr>
+                <tr>
+                    <td>mild disease</td><td>more than 80%</td>
+                </tr>
+                <tr>
+                    <td>severe disease, causing breathlessness and pneumonia</td><td>around 14%</td>
+                </tr>
+                <tr>
+                    <td>critical disease, causing septic shock, respiratory failure,<br>and the failure of more than one organ</td><td>about 5%</td>
+                </tr>
+                <tr>
+                    <td>fatal disease</td><td>2%</td>
+                </tr>
+            </table><br><br>
+            <p class="para05 para">
+                The WHO report that the two groups most at risk of experiencing severe illness due to a SARS-CoV-2 infection are older adults and people who have other health conditions that compromise their immune systems.<br><br>
+                According to the CDC, children are not at higher risk of COVID-19 than adults.<br><br>
+                Although there are currently no published scientific reports about the susceptibility of pregnant women, the CDC note that: 
+            </p><br><br>
+            <p class="para06">
+                “Pregnant [women] have had a higher risk of severe illness when infected with viruses from the same family as [those that cause] COVID-19 and other viral respiratory infections.”
+            </p><br><br>
+            <p class="para07 para">
+                The CDC also recommend that infants born to women with suspected or confirmed COVID-19 are put into isolation.
+            </p>
+            <span id="symptoms"></span>
+            <span></span>
+            <br><br><br><br><br>
+            <h1>Symptoms of COVID-19</h1><br><br>
+            <p class="para08 para">
+                According to the CDC, people may start to experience symptoms 2–14 days after exposure to the virus. <br><br>
+                The primary symptoms are a cough and shortness of breath or difficulty breathing.<br><br>
+                However, according to the CDC, a person with neither of those symptoms may still have COVID-19 if they experience at least two of the following:
+            </p><br><br>
+            <ul class="para08list list">
+                <li>a fever</li><br>
+                <li>chills</li><br>
+                <li>repeated shaking with chills</li><br>
+                <li>muscle pain</li><br>
+                <li>a headache</li><br>
+                <li>a sore throat</li><br>
+                <li>new loss of taste or smell</li>
+            </ul><br><br>
+            <p class="para09 para">
+                No vaccine is currently available for COVID-19. However, scientists have now replicated the virus. This could allow for early detection and treatment in people who have the virus but are not experiencing symptoms.<br><br>
+                According to the CDC, the following groups have a higher risk of developing serious illness from COVID-19:
+            </p><br><br>
+            <ul class="para09list list">
+                <li>people aged 65 years or older</li><br>
+                <li>people living in nursing homes or care facilities</li><br>
+                <li>people of any age who have serious underlying medical conditions, including chronic lung disease, serious heart conditions, severe obesity, a compromised immune system, or diabetes</li><br>
+            </ul><br><br>
+            <p class="para10 para">
+                The CDC note that although there have been reports of complications in young children, these are rare. COVID-19 most commonly produces mild symptoms in children.
+            </p>
+            <br><br><br><br><br>
+            <h1>General symptoms of coronavirus infections</h1>
+            <br><br>
+            <p class="para11 para">
+                Cold- or flu-like symptoms usually set in around 2–4 days after the infection develops. Typically, the symptoms are mild, though they vary from person to person. In some people, coronavirus infections are fatal.
+            </p>
+            <br><br>
+            <p class="para12 para">
+                Symptoms may include:
+            </p>
+            <br><br>
+            <ul class="para12list list">
+                <li>a runny nose</li><br>
+                <li>a headache</li><br>
+                <li>a cough</li><br>
+                <li>a fever</li><br>
+                <li>a sore throat</li><br>
+                <li>generally feeling unwell</li>
+            </ul><br><br>
+            <p class="para13 para">
+                While scientists can easily cultivate rhinoviruses — which also cause the common cold — in the laboratory, this is not the case with coronaviruses. This makes it difficult to gauge the impact of these pathogens.<br><br><br>
+                There is currently no cure for the cold-like illnesses caused by coronaviruses. Treatments include self-care and over-the-counter medications.<br><br><br>
+                Taking the following steps may help:
+            </p><br><br>
+            <ul class="para13list list">
+                <li>resting and avoiding overexertion</li><br>
+                <li>drinking plenty of water</li><br>
+                <li>avoiding smoking and smoky areas</li><br>
+                <li>taking acetaminophen (Tylenol) to reduce pain and a fever</li><br>
+                <li>using a clean humidifier or cool mist vaporizer</li>
+            </ul><br><br>
+            <p class="para14 para">
+                A doctor can identify the virus responsible in a sample of fluid from a person’s body, such as a sample of blood or mucus from the nose.
+            </p>
+            <span id="types"></span>
+            <span></span>
+            <br><br><br><br><br>
+            <h1>Types</h1>
+            <br><br>
+            <p class="para15 para">
+                Coronaviruses belong to the subfamily Coronavirinae in the family Coronaviridae.<br><br><br>
+                Different types of coronavirus vary, in terms of the severity of disease that they cause and how far they spread.<br><br><br>
+                Doctors currently recognize seven types of coronavirus that can infect humans.<br><br><br>
+                Common types include:
+            </p>
+            <br><br>
+            <ul class="para15list list">
+                <li>229E (alpha coronavirus)</li><br>
+                <li>NL63 (alpha coronavirus)</li><br>
+                <li>OC43 (beta coronavirus)</li><br>
+                <li>HKU1 (beta coronavirus)</li>
+            </ul><br><br>
+            <p class="para16 para">
+                Rarer strains that cause more severe illnesses include MERS-CoV, which causes the disease MERS, and SARS-CoV, the virus responsible for SARS.<br><br><br>
+                In 2019, a new strain, called SARS-CoV-2, started circulating, causing the disease COVID-19.<br><br><br>
+            </p>
+            <span id="transmission"></span>
+            <span></span>
+            <br><br><br><br><br>
+            <h1>Transmission</h1>
+            <br><br>
+            <p class="para17 para">
+                The CDC recommend that all people wear cloth face masks in public places where it is difficult to maintain a 6-foot (2-meter) distance from others. This will help slow the spread of the virus from asymptomatic people and people who do not know that they have contracted it. People should wear cloth face masks while continuing to practice physical distancing. Instructions for making masks at home are available here. Note: It is critical that surgical masks and N95 respirators are reserved for healthcare workers.<br><br><br>
+                Researchers believe that the viruses transmit via fluids in the respiratory system, such as mucus.<br><br><br>
+                For example, a coronavirus can spread when a person:
+            </p>
+            <br><br>
+            <ul class="para17list list">
+                <li>coughs or sneezes without covering their mouth, dispersing droplets into the air</li><br>
+                <li>touches someone who has the infection</li><br>
+                <li>touches a surface that has the virus, then touches their own nose, eyes, or mouth</li>
+            </ul>
+            <br><br>
+            <p class="para18 para">
+                Some animal coronaviruses may spread to humans through contact with feces, though it is unclear whether human coronaviruses can spread in the same way.<br><br><br>
+                Coronaviruses will infect most people at some point.<br><br><br>
+                To prevent transmission, people with symptoms should stay at home, rest, and avoid coming into close contact with other people.<br><br><br>
+                Covering the mouth and nose with a tissue or handkerchief while coughing or sneezing can also help prevent transmission. It is important to dispose of used tissues right away and maintain proper hygiene around the home.
+            </p>
+            <span id="sars"></span>
+            <span></span>
+            <br><br><br><br><br>
+            <h1>SARS</h1>
+            <br><br>
+            <p class="para19 para">
+                SARS is a contagious disease that develops from infection with the SARS-CoV coronavirus. It can lead to a life threatening form of pneumonia.<br><br><br>
+                In November 2002, the virus started circulating in the Guangdong province of southern China, eventually reaching Hong Kong. From there, it rapidly spread, causing infections in more than 24 countries.<br><br><br>
+                SARS-CoV can infect both the upper and lower respiratory tract.<br><br><br>
+                The symptoms of SARS develop over 1 week and start with a fever. Early on, people develop flu-like symptoms, such as:
+            </p>
+            <br><br>
+            <ul class="para19list list">
+                <li>a dry cough</li><br>
+                <li>chills</li><br>
+                <li>diarrhea</li><br>
+                <li>breathlessness</li><br>
+                <li>aches</li>
+            </ul>
+            <br><br>
+            <p class="para20 para">
+                Pneumonia, a severe lung infection, usually develops. At its most advanced stage, SARS causes failure of the lungs, heart, or liver.<br><br><br>
+                According to the CDC, authorities reported that 8,098 people contracted SARS during the outbreak. Among these people, 774 died of the disease. This indicates a mortality rate of 9.6%.<br><br><br>
+                Complications are more common among older adults. According to one source, more than half of those who died from the infection were over the age of 65. Authorities eventually controlled SARS in July 2003.
+            </p>
+            <span id="mers"></span>
+            <span></span>
+            <br><br><br><br><br>
+            <h1>MERS</h1>
+            <br><br>
+            <p class="para21 para">
+                MERS is caused by the MERS-CoV coronavirus. Scientists first recognized this severe respiratory illness in 2012 after it surfaced in Saudi Arabia. Since then, it has spread to other countries.<br><br><br>
+                The virus has reached the U.S. However, only two people in the country have tested positive for MERS-CoV, and this was in 2014. As a result, the CDC state that the risk of developing MERS in the U.S. is very low.<br><br><br>
+                Symptoms of MERS include a fever, breathlessness, and coughing. <br><br><br>
+                The illness spreads through close contact with people who have the infection.<br><br><br>
+                A 2019 investigation into MERS found that the disease is fatal in 35.2% of people who develop it.<br><br><br>
+            </p>
+            <span id="prevention"></span>
+            <span></span>
+            <br><br><br><br><br>
+            <h1>Tips to prevent coronavirus transmission</h1>
+            <br><br>
+            <p class="para22 paradif">
+                The global spread of coronavirus means that many people will now need to take certain action steps to help reduce its transmission.
+            </p>
+            <br><br>
+            <p class="para23 para">
+                Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2), which some people refer to as coronavirus, causes coronavirus disease 19 (COVID-19).
+                <br><br><br>
+                People can take the following everyday actions to help protect themselves and others from this illness:
+            </p>
+            <br><br><br><br>
+            <div class="awareness02div">
+                <a href="https://pin.it/33HASU3" target="_blank"><svg id="pintrest" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="pinterest" class="svg-inline--fa fa-pinterest fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3.8-3.4 5-20.3 6.9-28.1.6-2.5.3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"></path></svg></a>
+                <img class="awareness02" src="../image/awareness02.png">
+            </div>
+            <br><br><br><br>
+            <p class="para24 paradif">
+                Hand-washing
+            </p>
+            <br><br>
+            <p class="para25 para">
+                Regular hand-washing is one of the main ways to help prevent the transmission of coronavirus.<br><br>
+                People should use plenty of soap and water to wash their hands for at least 20 seconds, especially after:
+            </p>
+            <br><br>
+            <ul class="para25list list">
+                <li>a dry cough</li><br>
+                <li>chills</li><br>
+                <li>diarrhea</li><br>
+                <li>breathlessness</li><br>
+                <li>aches</li>
+            </ul>
+            <br><br>
+            <p class="para26 para">
+                If a person is not able to use soap and water, they can use a hand sanitizer containing at least 60% alcohol.<br><br>
+                Washing the hands with soap or hand sanitizer helps kill any viruses on the hands that people may have come into contact with.
+            </p>
+            <br><br><br><br>
+            <p class="para27 paradif">Avoiding touching the face</h1>
+            <br><br>
+            <p class="para28 para">
+                People should avoid touching their eyes, nose, and mouth with their hands, especially if they are unwashed. This can help limit the spread of germs and reduce the likelihood of them getting sick.<br><br>
+                The hands come into contact with several surfaces throughout the day, and they may pick up viruses this way. A new report suggests that SARS-CoV-2 can remain on certain surfaces for up to 3 days.<br><br>
+                If a person then touches their face, viruses can transfer to the eyes, nose, or mouth and enter the body.
+            </p>
+            <br><br><br><br>
+            <p class="para29 paradif">Limiting contact with others</p>
+            <br><br>
+            <p class="para30 para">
+                People should take care to avoid coming into close contact with others — especially those who are older, unwell, or have symptoms of the virus.<br><br>
+                The Centers for Disease Control and Prevention (CDC) recommend staying 6 feet away from anyone who is coughing or sneezing.<br><br>
+                This is because when a person coughs or sneezes, small droplets containing the virus leave their mouth and nose. Other people can then breathe these droplets in and catch any virus that the droplets may contain.<br><br>
+                If a person lives within a community where coronavirus is present, the relevant government will likely have additional instructions on how to implement social distancing. These may include:
+            </p>
+            <br><br>
+            <ul class="para30list list">
+                <li>staying home from work or working from home</li><br>
+                <li>avoiding contact with anyone who is not a member of the household</li><br>
+                <li>prohibiting large gatherings of people</li><br>
+                <li>closing nonessential services, including bars and restaurants</li>
+            </ul>
+            <br><br>
+            <p class="para31 para">
+                This is especially important for people at higher risk of getting seriously ill from COVID-19, such as older adults and people with the following underlying health conditions:
+            </p>
+            <br><br>
+            <ul class="para31list list">
+                <li>heart disease</li><br>
+                <li>ung disease</li><br>
+                <li>diabetes</li>
+            </ul>
+            <br><br>
+            <p class="para32 para">
+                People at higher risk may also need to take extra precautions, such as self-isolating by staying at home.<br><br>
+                The CDC recommend that all people wear cloth face masks in public places where it is difficult to maintain a 6-foot distance from others. This will help slow the spread of the virus from asymptomatic people or people who do not know they have contracted the virus. Cloth face masks should be worn while continuing to practice physical distancing. Instructions for making masks at home can be found here. Note: It is critical that surgical masks and N95 respirators are reserved for healthcare workers.
+            </p>
+            <br><br><br><br>
+            <p class="para33 paradif">Staying home if unwell</p>
+            <br><br>
+            <p class="para34 para">
+                If a person has mild symptoms of COVID-19, they can self-isolate by staying at home and avoiding contact with others.<br><br>
+                Even if a person is unsure whether they have COVID-19, a common cold, or something else, it is best to stay inside and rest.
+            </p>
+            <br><br><br><br>
+            <p class="para35 paradif">Calling ahead for medical attention</p>
+            <br><br>
+            <p class="para36 para">
+                Anyone with a fever, cough, or difficulty breathing in an area with a COVID-19 outbreak should seek medical advice.<br><br>
+                Calling ahead before visiting a healthcare facility allows healthcare providers to reduce the risk of the virus spreading to others.<br><br>
+                For example, they may have the person use a designated entrance at the hospital, which helps keep them away from vulnerable patients.
+            </p>
+            <br><br><br><br>
+            <p class="para37 paradif">Prevention tips while traveling</p>
+            <br><br>
+            <p class="para38 para">
+                If a person is traveling, all of the above prevention advice still applies and may help reduce the risk of contracting the virus.<br><br>
+                The CDC recommend that anyone at high risk of COVID-19 complications avoid cruise and air travel.<br><br>
+                People at lower risk can assess the potential risks of traveling, then decide whether it is best to postpone or cancel their travel plans.<br><br>
+                While the situation is constantly developing, many countries discourage nonessential travel and some have closed their borders to certain groups.<br><br>
+                The CDC recommend that people avoid all nonessential travel to the following places:
+            </p>
+            <br><br>
+            <ul class="para38list list">
+                <li>China</li><br>
+                <li>Iran</li><br>
+                <li>South Korea</li><br>
+                <li>most of Europe</li>
+            </ul>
+            <br><br>
+            <p class="para39 para">
+                People are returning to the United States from any of these places may need to stay at home for 14 days to reduce the risk of transmitting the virus to others.<br><br>
+                If they are planning to travel within the U.S., they may wish to consider the number of cases of COVID-19 in the areas they are traveling to and from, as well as whether or not the trip is essential.<br><br>
+                People should also consider risk factors such as their own health and the health of those around them.<br><br>
+                There are also some prevention tips for different settings and situations to help a person protect themselves and others from coronavirus.
+            </p>
+            <br><br><br><br>
+            <p class="para40 paradif">Prevention in the household</p>
+            <br><br>
+            <p class="para41 para">
+                The most valuable prevention method for the household is keeping all surfaces clean. A person should clean all surfaces that people touch regularly, including light switches, door handles, and countertops.<br><br>
+                To do so, they can use water and a household detergent. For surfaces that are visibly dirty, a person may wish to use a detergent and then a disinfectant.<br><br>
+                If a person in the household develops COVID-19, they can take the following steps to help prevent it from spreading:
+            </p>
+            <br><br>
+            <ul class="para41list list">
+                <li>staying in a separate room or bedroom</li><br>
+                <li>using a separate bathroom if possible</li><br>
+                <li>cleaning and disinfecting bathroom surfaces after using them</li><br>
+                <li>wearing a face mask when using communal areas</li><br>
+                <li>not sharing food and drink with people who do not have the illness</li><br>
+                <li>wearing gloves while cleaning and disinfecting any shared surfaces</li>
+            </ul>
+            <br><br><br><br>
+            <p class="para42 paradif">Prevention in the workplace</p>
+            <br><br>
+            <p class="para43 para">
+                Employers and workers can reduce the risk of coronavirus transmission in the workplace by:
+            </p>
+            <br><br>
+            <ul class="para43list list">
+                <li>cleaning and disinfecting all surfaces regularly</li><br>
+                <li>encouraging regular hand-washing by putting up posters, supplying hand sanitizer, and providing access to soap and water</li><br>
+                <li>communicating clearly to employees that people will need to stay at home if they display any symptoms of COVID-19, even if they are mild</li><br>
+                <li>using conference calls to hold meetings, rather than meeting face to face, when possible</li><br>
+                <li>getting employees to work from home whenever possible</li><br>
+                <li>offering social, financial, and mental health support to help people limit physical contact as much as possible</li>
+            </ul>
+            <br><br><br><br>
+            <p class="para44 paradif">Prevention at school</p>
+            <br><br>
+            <p class="para45 para">
+                Although older adults are more at risk of serious complications, children and teenagers can still carry SARS-CoV-2 and pass it to others.<br><br>
+                Some ways to prevent transmission in schools include:
+            </p>
+            <br><br>
+            <ul class="para45list list">
+                <li>displaying posters to encourage proper hand-washing</li><br>
+                <li>frequently cleaning and disinfecting surfaces such as tables, backs of chairs, and door handles</li><br>
+                <li>providing soap, water, and hand sanitizer</li><br>
+                <li>limiting all nonessential meetings and events</li><br>
+                <li>having sick children stay at home</li><br>
+                <li>closing schools if necessary and implementing distance learning if possible</li><br>
+                <li>providing support for students with concerns about COVID-19 and how it may affect them</li>
+            </ul>
+            <br><br><br><br>
+            <p class="para46 paradif">How and when to use face masks</p>
+            <br><br>
+            <p class="para47 para">
+                According to the World Health Organization (WHO), people will only need to wear a face mask if they are coughing, sneezing, or taking care of someone with COVID-19.<br><br>
+                Face masks are only effective if a person uses them correctly. Take the following steps to use and dispose of a face mask correctly:
+            </p>
+            <br><br>
+            <ul class="para47list list">
+                <li>Before touching the mask or the face, wash the hands with soap and water for at least 20 seconds.</li><br>
+                <li>Make sure that the mask covers the nose and mouth, with no gaps between the face and the mask.</li><br>
+                <li>While wearing the mask, avoid touching it.</li><br>
+                <li>If a person does touch the mask while wearing it, they should wash the hands again.</li><br>
+                <li>Avoid reusing single-use masks.</li><br>
+                <li>Do not write anything, such as a person’s name, on the mask. This damages mask integrity and could allow contaminants to enter.</li><br>
+                <li>Replace a mask if it becomes damp.</li><br>
+                <li>Remove the mask by lifting the string at the back, rather than by touching the front.</li><br>
+                <li>Discard used masks immediately into a closed garbage bin, then wash the hands again.</li>
+            </ul>
+        </div>
+        
+        <!-- footer -->
+
+        <footer>
+            <div class="inner_footer_first">
+                <h3 class="footer_heading">Coronavirus (COVID-19) Disease</h3>
+                <p class="footer_details">Coronaviruses are a family of viruses that range from the common cold to MERS coronavirus, which is Middle East Respiratory Syndrome coronavirus and SARs, Severe acute respiratory syndrome coronavirus. Corona viruses are circulating in animals and some of these coronaviruses have the capability of transmitting between animals and humans. We call that a spillover event.Corona viruses are circulating in animals and some of these coronaviruses have the capability of transmitting between animals and humans. We call that a spillover event.</p>
+            </div>
+            <div class="inner_footer_second">
+                <h3 class="footer_heading fh2">Do You Know About That</h3>
+                <p class="footer_links"><a class="fl" href="newsroom.html" target="_blank">Daily News Details.</a></p>
+                <p class="footer_links"><a class="fl" href="information.html">Important Information.</a></p>
+                <p class="footer_links"><a class="fl" href="worldmeter.html">World Meter Facts.</a></p>
+                <p class="footer_links"><a class="fl" href="emergenciescontact.html">All Emergencies Contact.</a></p>
+            </div>
+            <div class="inner_footer_third">
+                <h3 class="footer_heading fh3">Social Connectivity</h3>
+                <a class="fl" href="https://twitter.com/surajt26" target="_blank"><p class="footer_links_third"><svg class="social_svg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="svg-inline--fa fa-twitter fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>Twitter</p></a>
+                <a class="fl" href="https://www.facebook.com/surajt26/" target="_blank"><p class="footer_links_third"><svg class="social_svg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook" class="svg-inline--fa fa-facebook fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg>Facebook</p></a>
+                <a class="fl" href="https://www.instagram.com/surajt26/" target="_blank"><p class="footer_links_third"><svg class="social_svg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" class="svg-inline--fa fa-instagram fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>Instagram</p></a>
+                <a class="fl" href="https://www.linkedin.com/in/surajt26/" target="_blank"><p class="footer_links_third"><svg class="social_svg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin-in" class="svg-inline--fa fa-linkedin-in fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>Linkedin</p></a>
+            </div>
+            <div class="line">
+                <p class="bottom_details">&#169 2020 My Website. All rights reserved | Designed and Developed by Suraj KY</p>
+            </div>
+        </footer>
+
+        <script>
+            $(document).ready(function(){
+              // Add smooth scrolling to all links
+              $("a").on('click', function(event) {
+            
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                  // Prevent default anchor click behavior
+                  event.preventDefault();
+            
+                  // Store hash
+                  var hash = this.hash;
+            
+                  // Using jQuery's animate() method to add smooth page scroll
+                  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                  $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                  }, 1000, function(){
+               
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                  });
+                } // End if
+              });
+            });
+        </script>
+        
+    </body>
+</html>

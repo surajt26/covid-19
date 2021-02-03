@@ -1,0 +1,306 @@
+.bookmark_upper {
+    position: fixed;
+    right: 1%;
+    bottom: 1%;
+    width: 40px;
+    height: 40px;
+    background-color: #4CAF50;
+    border-radius: 50%;
+    z-index: 100;
+}
+#toparrow {
+    position: absolute;
+    top: 9px;
+    left: 10px;
+    width: 20px;
+    color: #fff;
+}
+.bookmark_upper:hover {
+    background-color: #CC0000;
+}
+.bookmark_upper:hover #toparrow{
+    color: #fff;
+}
+.coronavirusimg {
+    position: relative;
+    width: 90%; 
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.coronavirusimg #pintrest {
+    position: absolute;
+    display: none;
+    width: 28px;
+    margin: 20px;
+    color: #404040;
+}
+
+.coronavirusimg:hover #pintrest {
+    display: block;
+}
+
+.coronavirusimg #pintrest:hover {
+    color: #c8232c;
+}
+
+.coronavirusimg img {
+    width: 100%;
+}
+
+.information {
+    width: 90%;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #fff;
+}
+
+
+h1.big {
+    color: #404040;
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+
+.sub_menus_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.sub_menu {
+    width: 130px;
+    height: 40px;
+    margin: 10px 5px;
+    text-align: center;
+    line-height: 40px;
+    letter-spacing: 1px;
+    border-radius: 20px;
+    transition: ease all .4s;
+}
+.sub_menu:hover {
+    background-color: #4CAF50;
+}
+.sub_menu_link p {
+    width: 110px;
+    margin: 0 auto;
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1.5px solid #CC0000;
+}
+.sub_menu:hover p{
+    color: #fff;
+    border: none;
+}
+
+.artical {
+    letter-spacing: 1px;
+    background-color: #fff;
+    border-left: 5px solid #cc0000;
+    padding: 25px;
+    border-radius: 0 5px 5px 0;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.paradif {
+    font-size: 26px;
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.para02 {
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.para03 {
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.imgdiv {
+    position: relative;
+    width: 60%;
+}
+
+.imgdiv #pintrest {
+    display: none;
+    position: absolute;
+    width: 28px;
+    margin: 20px;
+    color: #404040;
+}
+
+.imgdiv:hover #pintrest {
+    display: block;
+}
+
+.imgdiv #pintrest:hover {
+    color: #c8232c;
+}
+
+.imgdiv img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.imgdown {
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: rgba(64, 64, 64, 0.5);
+}
+
+.para04 {
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+table {
+    letter-spacing: 1px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+table, th, td {
+    border: 1px solid #000;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    color: #404040;
+}
+
+table td {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.para05 {
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.para06 {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.para07 {
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.para08 {
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.list {
+    position: static;
+    display: block;
+    list-style-type: disc;
+    margin-left: 50px;
+    background-color: #fff;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, 0.7)
+}
+
+.list li{
+    display: list-item;
+}
+
+.para09 {
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.para10, .para {
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, 0.7);
+}
+.awareness02div {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+.awareness02div #pintrest {
+    width: 28px;
+    display: none;
+    position: absolute;
+    margin: 20px;
+    color: #404040;
+}
+
+.awareness02div #pintrest:hover {
+    color: #c8232c;
+}
+.awareness02div .awareness02 {
+    width: 100%;
+}
+
+.awareness02div:hover #pintrest {
+    display: block;
+}
+
+.information a {
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #000;
+}
+
+
+@media screen and (max-width: 1100px) {
+    .bookmark_upper {
+        right: .5%;
+    }
+}
+@media screen and (max-width: 950px) {
+    .bookmark_upper {
+        right: 6%;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .information {
+        padding: 25px;
+    }
+    .imgdiv {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .bookmark_upper {
+        right: 1%;
+    }
+    .coronavirusimg {
+        width: 100%;
+    }
+    .information {
+        width: 100%;
+        padding: 15px;
+    }
+    .list {
+        margin-left: 35px;
+    }
+}
+@media screen and (max-width: 420px) {
+    h1.big {
+        font-size: 35px;
+    }
+}
+@media screen and (max-width: 370px) {
+    h1.big {
+        font-size: 30px;
+    }
+}

@@ -1,0 +1,1956 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>COVID-19 | IndiaMeter</title>
+        <link rel="icon" href="image/icon.png" type="image/icon">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../css/main.css">
+        <link rel="stylesheet" type="text/css" href="../css/indiameter.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body {
+                background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../image/virus.jpg');
+                height: 100%;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+                background-position: center;
+
+                
+            }
+        </style>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    </head>
+        
+    <body>
+        
+        <a href="#take_top">
+            <div class="bookmark_upper">
+                <p id="toparrow"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-up" class="svg-inline--fa fa-arrow-up fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"></path></svg></p>
+            </div>
+        </a>
+        <div class="menuCover" id="menuCover">
+            <div><p style="float:right;"><span onclick="menuHide()">X</span></p></div>
+            <div><p><a href="../index.html">Home</a></p></div>
+            <div><p><a href="newsroom.html" target="_blank">NewsRoom</a></p></div>
+            <div><p><a href="information.html">Information</a></p></div>
+            <div><p><a class="activeBar" href="indiameter.html">IndiaMeter</a></p></div>
+            <div><p><a href="worldmeter.html">WorldMeter</a></p></div>
+            <div><p><a href="emergenciescontact.html">EmergenciesContact</a></p></div>
+            <div><p><a href="contactinfo.html">ContactUs</a></p></div>
+        </div>
+
+        <header id="take_top">
+            <a class="logo" href="../index.html">Coronavirus (COVID-19)</a>
+        </header>
+
+        <div class="menuBar">
+            <span onclick="menuShow()">Menu</span>
+        </div>
+        <script>
+            function menuShow() {
+              var x = document.getElementById("menuCover");
+              if (x.style.display === "none") {
+                x.style.display = "grid";
+              } else {
+                x.style.display = "none";
+              }
+            }
+            function menuHide() {
+              var x = document.getElementById("menuCover");
+              if (x.style.display === "grid") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "grid";
+              }
+            }
+        </script>
+
+        <ul class="menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="newsroom.html" target="_blank">NewsRoom</a></li>
+            <li><a href="information.html">Information</a></li>
+            <li><a class="active" href="indiameter.html">IndiaMeter</a></li>
+            <li><a href="worldmeter.html">WorldMeter</a></li>
+            <li><a href="emergenciescontact.html">EmergenciesContact</a></li>
+            <li><a href="contactinfo.html">Contact Info</a></li>
+        </ul>
+
+
+        <div class="india_section">
+            <div class="card_section">
+                <div class="card">
+                    <div class="contain">
+                        <div class="front">COVID-19 INDIA</div>
+                        <div class="back">Last updated: Jun 07, 2020, 09:00 IST</div>
+                    </div>
+                </div>
+            </div>
+            <div class="meter_section">
+                <div class="total flex">
+                    <img src="../image/india_virus.png">
+                    <h1>2,43,756</h1>
+                    <h4>Confirmed</h4>
+                </div>
+                <div class="actives flex">
+                    <img src="../image/india_virus.png">
+                    <h1>1,19,577</h1>
+                    <h4>Active</h4>
+                </div>
+                <div class="discharged flex">
+                    <img src="../image/india_virus.png">
+                    <h1>1,17,469</h1>
+                    <h4>Recovered</h4>
+                </div>
+                <div class="deaths flex">
+                    <img src="../image/india_virus.png">
+                    <h1>6,845</h1>
+                    <h4>Deaths</h4>
+                </div>
+                <div class="migrated flex">
+                    <img src="../image/india_virus.png">
+                    <h1>1</h1>
+                    <h4>Migrated</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="indiatable">
+            <div class="head">COVID-19 Statewise Status</div>
+            <div class="states">
+                <table class="tbl01 tbl">
+                    <tr class="heading">
+                        <th class="firstbox">Name of State / UT</th><th class="sbox">Confirmed</th><th class="tbox">News Cases</th><th class="fbox">Active</th><th class="fibox">Recovered</th><th class="sibox">Death</th>
+                    </tr>
+                    <tr class="even">
+                        <td class="firstbox"><input class="btns" type="button"  value=">" id="btn01"> Andaman And Nicobar</td><td class="sbox">33</td><td class="tbox">0</td><td class="fbox">0</td><td class="fibox">33</td><td class="sibox">0</td>
+                    </tr>
+                </table>
+                <div id="div01" class="citys">
+                    <div class="cityhead">COVID-19 Citywise Status</div>
+                    <table class="divtbl01 divtbl">
+                        <tr class="divheading">
+                            <th>City</th><th class="rightth">Total Confirmed cases</th>
+                        </tr>
+                        <tr>
+                            <td>North And Middle Andaman</td><td class="righttd">1</td>
+                        </tr>
+                        <tr>
+                            <td>South Andaman</td><td class="righttd">32</td>
+                        </tr>
+                    </table>
+                    <div class="endcity"></div>
+                </div>
+
+                <table class="tbl02 tbl">
+                    <tr>
+                        <td class="firstbox"><input type="button"  value=">" id="btn02"> Andhra Pradesh</td><td class="sbox">4,460</td><td class="tbox nc">+210</td><td class="fbox">1,766</td><td class="fibox">2,621</td><td class="sibox">73</td>
+                    </tr>
+                </table>
+                <div id="div02" class="citys">
+                    <div class="cityhead">COVID-19 Citywise Status</div>
+                    <table class="divtbl02 divtbl">
+                        <tr class="divheading">
+                            <th>City</th><th class="rightth">Total Confirmed cases</th>
+                        </tr>
+                        <tr>
+                            <td>Anantapur</td><td class="righttd">274</td>
+                        </tr>
+                        <tr>
+                            <td>Chittoor</td><td class="righttd">298</td>
+                        </tr>
+                        <tr>
+                            <td>East Godavari</td><td class="righttd">272</td>
+                        </tr>
+                        <tr>
+                            <td>Guntur</td><td class="righttd">556</td>
+                        </tr>
+                        <tr>
+                            <td>Krishna</td><td class="righttd">526</td>
+                        </tr>
+                        <tr>
+                            <td>Kurnool</td><td class="righttd">762</td>
+                        </tr>
+                        <tr>
+                            <td>Prakasam</td><td class="righttd">85</td>
+                        </tr>
+                        <tr>
+                            <td>S.P.S. Nellore</td><td class="righttd">304</td>
+                        </tr>
+                        <tr>
+                            <td>Visakhapatnam</td><td class="righttd">111</td>
+                        </tr>
+                        <tr>
+                            <td>West Godavari</td><td class="righttd">182</td>
+                        </tr>
+                        <tr>
+                            <td>Y.S.R.</td><td class="righttd">150</td>
+                        </tr>
+                    </table>
+                    <div class="endcity"></div>
+                </div>
+
+                <table class="tbl03 tbl">
+                    <tr class="even">
+                        <td class="firstbox"><input type="button"  value=">" id="btn03"> Arunachal Pradesh</td><td class="sbox">46</td><td class="tbox">0</td><td class="fbox">45</td><td class="fibox">1</td><td class="sibox">0</td>
+                    </tr>
+                </table>
+                <div id="div03" class="citys">
+                    <div class="cityhead">COVID-19 Citywise Status</div>
+                    <table class="divtbl03 divtbl">
+                        <tr class="divheading">
+                            <th>City</th><th class="rightth">Total Confirmed cases</th>
+                        </tr>
+                        <tr>
+                            <td>Lohit</td><td class="righttd">2</td>
+                        </tr>
+                    </table>
+                    <div class="endcity"></div>
+                </div>
+
+                <table class="tbl04 tbl">
+                    <tr>
+                        <td class="firstbox"><input type="button"  value=">" id="btn04"> Assam</td><td class="sbox">2,398</td><td class="tbox nc">+154</td><td class="fbox">1,802</td><td class="fibox">589</td><td class="sibox">4</td>
+                    </tr>
+                </table>
+                <div id="div04" class="citys">
+                    <div class="cityhead">COVID-19 Citywise Status</div>
+                    <table class="divtbl04 divtbl">
+                        <tr class="divheading">
+                            <th>City</th><th class="rightth">Total Confirmed cases</th>
+                        </tr>
+                        <tr>
+                            <td>Cachar</td><td class="righttd">2</td>
+                        </tr>
+                        <tr>
+                            <td>Dhubri</td><td class="righttd">4</td>
+                        </tr>
+                        <tr>
+                            <td>Goalpara</td><td class="righttd">5</td>
+                        </tr>
+                        <tr>
+                            <td>Golaghat</td><td class="righttd">1</td>
+                        </tr>
+                        <tr>
+                            <td>Hailakandi</td><td class="righttd">1</td>
+                        </tr>
+                        <tr>
+                            <td>Jorhat</td><td class="righttd">8</td>
+                        </tr>
+                        <tr>
+                            <td>Kamrup</td><td class="righttd">1</td>
+                        </tr>
+                        <tr>
+                            <td>Kamrup Metropolitan</td><td class="righttd">5</td>
+                        </tr>
+                        <tr>
+                            <td>Lakhimpur</td><td class="righttd">1</td>
+                        </tr>
+                        <tr>
+                            <td>Morigaon</td><td class="righttd">1</td>
+                        </tr>
+                        <tr>
+                            <td>Nalbari</td><td class="righttd">3</td>
+                        </tr>
+                        <tr>
+                            <td>South Salmara Mancachar</td><td class="righttd">1</td>
+                        </tr>
+                    </table>
+                    <div class="endcity"></div>
+                </div>
+
+                <table class="tbl05 tbl">
+                    <tr class="even">
+                        <td class="firstbox"><input type="button"  value=">" id="btn05"> Bihar</td><td class="sbox">4,745</td><td class="tbox nc">+147</td><td class="fbox">2,483</td><td class="fibox">2,233</td><td class="sibox">29</td>
+                    </tr>
+                </table>
+                <div id="div05" class="citys">
+                    <div class="cityhead">COVID-19 Citywise Status</div>
+                    <table class="divtbl05 divtbl">
+                        <tr class="divheading">
+                            <th>City</th><th class="rightth">Total Confirmed cases</th>
+                        </tr>
+                        <tr>
+                            <td>Begusarai</td><td class="righttd">8</td>
+                        </tr>
+                        <tr>
+                            <td>Bhagalpur</td><td class="righttd">1</td>
+                        </tr>
+                        <tr>
+                            <td>Gaya</td><td class="righttd">5</td>
+                        </tr>
+                        <tr>
+                            <td>Gopalganj</td><td class="righttd">3</td>
+                        </tr>
+                        <tr>
+                            <td>Lakhisarai</td><td class="righttd">1</td>
+                        </tr>
+                        <tr>
+                            <td>Munger</td><td class="righttd">8</td>
+                        </tr>
+                        <tr>
+                            <td>Nalanda</td><td class="righttd">6</td>
+                        </tr>
+                        <tr>
+                            <td>Nawada</td><td class="righttd">3</td>
+                        </tr>
+                        <tr>
+                            <td>Patna</td><td class="righttd">6</td>
+                        </tr>
+                        <tr>
+                            <td>Saran</td><td class="righttd">1</td>
+                        </tr>
+                        <tr>
+                            <td>Siwan</td><td class="righttd">29</td>
+                        </tr>
+                        <tr>
+                            <td>Vaishali</td><td class="righttd">1</td>
+                        </tr>
+                    </table>
+                    <div class="endcity"></div>
+                </div>
+
+                <table class="tbl06 tbl">
+                    <tr>
+                        <td class="firstbox"><input type="button"  value=">" id="btn06"> Chandigarh</td><td class="sbox">309</td><td class="tbox">0</td><td class="fbox">31</td><td class="fibox">273</td><td class="sibox">5</td>
+                    </tr>
+                </table>
+                <div id="div06" class="citys">
+                    <div class="cityhead">COVID-19 Citywise Status</div>
+                    <table class="divtbl06 divtbl">
+                        <tr class="divheading">
+                            <th>City</th><th class="rightth">Total Confirmed cases</th>
+                        </tr>
+                        <tr>
+                            <td>Chandigarh</td><td class="righttd">21</td>
+                        </tr>
+                    </table>
+                    <div class="endcity"></div>
+                </div>
+
+                <table class="tbl07 tbl">
+                    <tr class="even">
+                        <td class="firstbox"><input type="button"  value=">" id="btn07"> Chhattisgarh</td><td class="sbox">923</td><td class="tbox nc">+60</td><td class="fbox">660</td><td class="fibox">259</td><td class="sibox">4</td>
+                    </tr>
+                </table>
+                <div id="div07" class="citys">
+                    <div class="cityhead">COVID-19 Citywise Status</div>
+                    <table class="divtbl07 divtbl">
+                        <tr class="divheading">
+                            <th>City</th><th class="rightth">Total Confirmed cases</th>
+                        </tr>
+                        <tr>
+                            <td>Bilaspur</td><td class="righttd">1</td>
+                        </tr>
+                        <tr>
+                            <td>Durg</td><td class="righttd">1</td>
+                        </tr>
+                        <tr>
+                            <td>Korba</td><td class="righttd">25</td>
+                        </tr>
+                        <tr>
+                            <td>Raipur</td><td class="righttd">5</td>
+                        </tr>
+                        <tr>
+                            <td>Rajnandgaon</td><td class="righttd">1</td>
+                        </tr>
+                    </table>
+                    <div class="endcity"></div>
+                </div>
+
+                <table class="tbl08 tbl">
+                    <tr>
+                        <td class="firstbox"><input type="button"  value=">" id="btn08"> Delhi</td><td class="sbox">27,654</td><td class="tbox nc">+1,320</td><td class="fbox">16,229</td><td class="fibox">10,664</td><td class="sibox">761</td>
+                    </tr>
+                </table>
+                <div id="div08" class="citys">
+                    <div class="cityhead">COVID-19 Citywise Status</div>
+                    <table class="divtbl08 divtbl">
+                        <tr class="divheading">
+                            <th>City</th><th class="rightth">Total Confirmed cases</th>
+                        </tr>
+                        <tr>
+                            <td>East Delhi</td><td class="righttd">1</td>
+                        </tr>
+                        <tr>
+                            <td>New Delhi</td><td class="righttd">5</td>
+                        </tr>
+                        <tr>
+                            <td>North Delhi</td><td class="righttd">3</td>
+                        </tr>
+                        <tr>
+                            <td>North East Delhi</td><td class="righttd">1</td>
+                        </tr>
+                        <tr>
+                            <td>North West Delhi</td><td class="righttd">3</td>
+                        </tr>
+                        <tr>
+                            <td>South Delhi</td><td class="righttd">26</td>
+                        </tr>
+                        <tr>
+                            <td>South West Delhi</td><td class="righttd">3</td>
+                        </tr>
+                        <tr>
+                            <td>West Delhi</td><td class="righttd">2</td>
+                        </tr>
+                        <tr>
+                            <td>Unknown</td><td class="righttd">1534</td>
+                        </tr>
+                    </table>
+                    <div class="endcity"></div>
+                </div>
+
+                <table class="tbl09 tbl">
+                    <tr class="even">
+                        <td class="firstbox"><input type="button"  value=">" id="btn09"> Goa</td><td class="sbox">267</td><td class="tbox nc">+71</td><td class="fbox">202</td><td class="fibox">65</td><td class="sibox">0</td>
+                    </tr>
+                </table>
+                <div id="div09" class="citys">
+                    <div class="cityhead">COVID-19 Citywise Status</div>
+                    <table class="divtbl09 divtbl">
+                        <tr class="divheading">
+                            <th>City</th><th class="rightth">Total Confirmed cases</th>
+                        </tr>
+                        <tr>
+                            <td>North Goa</td><td class="righttd">4</td>
+                        </tr>
+                        <tr>
+                            <td>Unknown</td><td class="righttd">3</td>
+                        </tr>
+                    </table>
+                    <div class="endcity"></div>
+                </div>
+
+                <table class="tbl010 tbl">
+                    <tr>
+                        <td class="firstbox"><input type="button"  value=">" id="btn10"> Gujarat</td><td class="sbox">19,617</td><td class="tbox nc">+498</td><td class="fbox">5,074</td><td class="fibox">13,324</td><td class="sibox">1,219</td>
+                    </tr>
+                </table>
+                <div id="div10" class="citys">
+                    <div class="cityhead">COVID-19 Citywise Status</div>
+                    <table class="divtbl10 divtbl">
+                        <tr class="divheading">
+                            <th>City</th><th class="rightth">Total Confirmed cases</th>
+                        </tr>
+                        <tr>
+                            <td>Ahmadabad</td><td class="righttd">492</td>
+                        </tr>
+                        <tr>
+                            <td>Anand</td><td class="righttd">25</td>
+                        </tr>
+                        <tr>
+                            <td>Banas Kantha</td><td class="righttd">6</td>
+                        </tr>
+                        <tr>
+                            <td>Bharuch</td><td class="righttd">13</td>
+                        </tr>
+                        <tr>
+                            <td>Bhavnagar</td><td class="righttd">26</td>
+                        </tr>
+                        <tr>
+                            <td>Botad</td><td class="righttd">1</td>
+                        </tr>
+                        <tr>
+                            <td>Chota Udaipur</td><td class="righttd">5</td>
+                        </tr>
+                        <tr>
+                            <td>Dahod</td><td class="righttd">2</td>
+                        </tr>
+                        <tr>
+                            <td>Gandhinagar</td><td class="righttd">17</td>
+                        </tr>
+                        <tr>
+                            <td>Gir Somnath</td><td class="righttd">2</td>
+                        </tr>
+                        <tr>
+                            <td>Jamnagar</td><td class="righttd">1</td>
+                        </tr>
+                        <tr>
+                            <td>Kachchh</td><td class="righttd">4</td>
+                        </tr>
+                        <tr>
+                            <td>Kheda</td><td class="righttd">2</td>
+                        </tr>
+                        <tr>
+                            <td>Mahesana</td><td class="righttd">4</td>
+                        </tr>
+                        <tr>
+                            <td>Morbi</td><td class="righttd">1</td>
+                        </tr>
+                        <tr>
+                            <td>Narmada</td><td class="righttd">6</td>
+                        </tr>
+                        <tr>
+                            <td>Panch Mahals</td><td class="righttd">6</td>
+                        </tr>
+                        <tr>
+                            <td>Patan</td><td class="righttd">14</td>
+                        </tr>
+                        <tr>
+                            <td>Porbandar</td><td class="righttd">3</td>
+                        </tr>
+                        <tr>
+                            <td>Rajkot</td><td class="righttd">27</td>
+                        </tr>
+                        <tr>
+                            <td>Sabar Kantha</td><td class="righttd">1</td>
+                        </tr>
+                        <tr>
+                            <td>Surat</td><td class="righttd">86</td>
+                        </tr>
+                        <tr>
+                            <td>Vadodara</td><td class="righttd">127</td>
+                        </tr>
+                    </table>
+                    <div class="endcity"></div>
+                </div>
+
+                <table class="tbl11 tbl">
+                    <tr class="even">
+                        <td class="firstbox"><input type="button"  value=">" id="btn11"> Haryana</td><td class="sbox">3,952</td><td class="tbox nc">+355</td><td class="fbox">2,648</td><td class="fibox">1,280</td><td class="sibox">24</td>
+                    </tr>
+                </table>
+                <div id="div11" class="citys">
+                    <div class="cityhead">COVID-19 Citywise Status</div>
+                    <table class="divtbl11 divtbl">
+                        <tr class="divheading">
+                            <th>City</th><th class="rightth">Total Confirmed cases</th>
+                        </tr>
+                        <tr>
+                            <td>Ambala</td><td class="righttd">7</td>
+                        </tr>
+                        <tr>
+                            <td>Bhiwani</td><td class="righttd">2</td>
+                        </tr>
+                        <tr>
+                            <td>Charki Dadri</td><td class="righttd">1</td>
+                        </tr>
+                        <tr>
+                            <td>Faridabad</td><td class="righttd">33</td>
+                        </tr>
+                        <tr>
+                            <td>Fatehabad</td><td class="righttd">1</td>
+                        </tr>
+                        <tr>
+                            <td>Gurugram</td><td class="righttd">32</td>
+                        </tr>
+                        <tr>
+                            <td>Hisar</td><td class="righttd">2</td>
+                        </tr>
+                        <tr>
+                            <td>Italians</td><td class="righttd">14</td>
+                        </tr>
+                        <tr>
+                            <td>Jind</td><td class="righttd">2</td>
+                        </tr>
+                        <tr>
+                            <td>Kaithal</td><td class="righttd">2</td>
+                        </tr>
+                        <tr>
+                            <td>Karnal</td><td class="righttd">6</td>
+                        </tr>
+                        <tr>
+                            <td>Kurukshetra</td><td class="righttd">2</td>
+                        </tr>
+                        <tr>
+                            <td>Nuh</td><td class="righttd">48</td>
+                        </tr>
+                        <tr>
+                            <td>Palwal</td><td class="righttd">29</td>
+                        </tr>
+                        <tr>
+                            <td>Panchkula</td><td class="righttd">6</td>
+                        </tr>
+                        <tr>
+                            <td>Panipat</td><td class="righttd">5</td>
+                        </tr>
+                        <tr>
+                            <td>Rohtak</td><td class="righttd">1</td>
+                        </tr>
+                        <tr>
+                            <td>Sirsa</td><td class="righttd">4</td>
+                        </tr>
+                        <tr>
+                            <td>Sonipat</td><td class="righttd">4</td>
+                        </tr>
+                        <tr>
+                            <td>Yamunanagar</td><td class="righttd">3</td>
+                        </tr>
+                    </table>
+                    <div class="endcity"></div>
+                </div>
+
+                <table class="tbl12 tbl">
+                    <tr>
+                        <td class="firstbox"><input type="button"  value=">" id="btn12"> Himachal Pradesh</td><td class="sbox">398</td><td class="tbox nc">+4</td><td class="fbox">201</td><td class="fibox">188</td><td class="sibox">6</td>
+                    </tr>
+                </table>
+                <div id="div12" class="citys">
+                    <div class="cityhead">COVID-19 Citywise Status</div>
+                    <table class="divtbl12 divtbl">
+                        <tr class="divheading">
+                            <th>City</th><th class="rightth">Total Confirmed cases</th>
+                        </tr>
+                        <tr>
+                            <td>Chamba</td><td class="righttd">4</td>
+                        </tr>
+                        <tr>
+                            <td>Kangra</td><td class="righttd">4</td>
+                        </tr>
+                        <tr>
+                            <td>Sirmaur</td><td class="righttd">1</td>
+                        </tr>
+                        <tr>
+                            <td>Solan</td><td class="righttd">9</td>
+                        </tr>
+                        <tr>
+                            <td>Una</td><td class="righttd">15</td>
+                        </tr>
+                        <tr>
+                            <td>Unknown</td><td class="righttd">2</td>
+                        </tr>
+                    </table>
+                    <div class="endcity"></div>
+                </div>
+
+                <table class="tbl13 tbl">
+                    <tr class="even">
+                        <td class="firstbox"><input type="button"  value=">" id="btn13"> Jammu and Kashmir</td><td class="sbox">3,467</td><td class="tbox nc">+143</td><td class="fbox">2,302</td><td class="fibox">1,126</td><td class="sibox">39</td>
+                    </tr>
+                </table>
+                <div id="div13" class="citys">
+                    <div class="cityhead">COVID-19 Citywise Status</div>
+                    <table class="divtbl13 divtbl">
+                        <tr class="divheading">
+                            <th>City</th><th class="rightth">Total Confirmed cases</th>
+                        </tr>
+                        <tr>
+                            <td>Badgam</td><td class="righttd">11</td>
+                        </tr>
+                        <tr>
+                            <td>Bandipore</td><td class="righttd">56</td>
+                        </tr>
+                        <tr>
+                            <td>Baramula</td><td class="righttd">42</td>
+                        </tr>
+                        <tr>
+                            <td>Budaun</td><td class="righttd">1</td>
+                        </tr>
+                        <tr>
+                            <td>Ganderbal</td><td class="righttd">13</td>
+                        </tr>
+                        <tr>
+                            <td>jammu</td><td class="righttd">26</td>
+                        </tr>
+                        <tr>
+                            <td>Kishtwar</td><td class="righttd">1</td>
+                        </tr>
+                        <tr>
+                            <td>Kulgam</td><td class="righttd">5</td>
+                        </tr>
+                        <tr>
+                            <td>Kupwara</td><td class="righttd">25</td>
+                        </tr>
+                        <tr>
+                            <td>Pulwama</td><td class="righttd">3</td>
+                        </tr>
+                        <tr>
+                            <td>Rajouri</td><td class="righttd">3</td>
+                        </tr>
+                        <tr>
+                            <td>Samba</td><td class="righttd">4</td>
+                        </tr>
+                        <tr>
+                            <td>Shupiyan</td><td class="righttd">14</td>
+                        </tr>
+                        <tr>
+                            <td>Srinagar</td><td class="righttd">76</td>
+                        </tr>
+                        <tr>
+                            <td>Udhampur</td><td class="righttd">20</td>
+                        </tr>
+                    </table>
+                    <div class="endcity"></div>
+                </div>
+
+                <table class="tbl14 tbl">
+                    <tr>
+                        <td class="firstbox"><input type="button"  value=">" id="btn14"> Jharkhand</td><td class="sbox">938</td><td class="tbox nc">+95</td><td class="fbox">521</td><td class="fibox">410</td><td class="sibox">7</td>
+                    </tr>
+                </table>
+                <div id="div14" class="citys">
+                    <div class="cityhead">COVID-19 Citywise Status</div>
+                    <table class="divtbl14 divtbl">
+                        <tr class="divheading">
+                            <th>City</th><th class="rightth">Total Confirmed cases</th>
+                        </tr>
+                        <tr>
+                            <td>Bokaro</td><td class="righttd">9</td>
+                        </tr>
+                        <tr>
+                            <td>Giridih</td><td class="righttd">1</td>
+                        </tr>
+                        <tr>
+                            <td>Hazaribagh</td><td class="righttd">2</td>
+                        </tr>
+                        <tr>
+                            <td>Kodarma</td><td class="righttd">1</td>
+                        </tr>
+                        <tr>
+                            <td>Ranchi</td><td class="righttd">14</td>
+                        </tr>
+                        <tr>
+                            <td>Simdega</td><td class="righttd">1</td>
+                        </tr>
+                    </table>
+                    <div class="endcity"></div>
+                </div>
+
+                <table class="tbl15 tbl">
+                    <tr class="even">
+                        <td class="firstbox"><input type="button"  value=">" id="btn15"> Karnataka</td><td class="sbox">5,213</td><td class="tbox nc">+378</td><td class="fbox">3,179</td><td class="fibox">1,973</td><td class="sibox">59</td>
+                    </tr>
+                </table>
+                <div id="div15" class="citys">
+                    <div class="cityhead">COVID-19 Citywise Status</div>
+                    <table class="divtbl15 divtbl">
+                        <tr class="divheading">
+                            <th>City</th><th class="rightth">Total Confirmed cases</th>
+                        </tr>
+                        <tr>
+                            <td>Bagalkote</td><td class="righttd">14</td>
+                        </tr>
+                        <tr>
+                            <td>Ballari</td><td class="righttd">6</td>
+                        </tr>
+                        <tr>
+                            <td>Belagavi</td><td class="righttd">36</td>
+                        </tr>
+                        <tr>
+                            <td>Bengaluru</td><td class="righttd">87</td>
+                        </tr>
+                        <tr>
+                            <td>Bengaluru Rural</td><td class="righttd">5</td>
+                        </tr>
+                        <tr>
+                            <td>Bidar</td><td class="righttd">13</td>
+                        </tr>
+                        <tr>
+                            <td>Chikkaballapura</td><td class="righttd">10</td>
+                        </tr>
+                        <tr>
+                            <td>Dakshina Kannada</td><td class="righttd">12</td>
+                        </tr>
+                        <tr>
+                            <td>Davanagere</td><td class="righttd">3</td>
+                        </tr>
+                        <tr>
+                            <td>Dharwad</td><td class="righttd">6</td>
+                        </tr>
+                        <tr>
+                            <td>Gadag</td><td class="righttd">2</td>
+                        </tr>
+                        <tr>
+                            <td>Kalaburagi</td><td class="righttd">1</td>
+                        </tr>
+                        <tr>
+                            <td>Kodagu</td><td class="righttd">8</td>
+                        </tr>
+                        <tr>
+                            <td>Mandya</td><td class="righttd">61</td>
+                        </tr>
+                        <tr>
+                            <td>Mysuru</td><td class="righttd">61</td>
+                        </tr>
+                        <tr>
+                            <td>Tumakuru</td><td class="righttd">1</td>
+                        </tr>
+                        <tr>
+                            <td>Udupi</td><td class="righttd">3</td>
+                        </tr>
+                        <tr>
+                            <td>Uttara Kannada</td><td class="righttd">10</td>
+                        </tr>
+                        <tr>
+                            <td>Vijayapura</td><td class="righttd">17</td>
+                        </tr>
+                    </table>
+                    <div class="endcity"></div>
+                </div>
+
+                <table class="tbl16 tbl">
+                    <tr>
+                        <td class="firstbox"><input type="button"  value=">" id="btn16"> Kerala</td><td class="sbox">1,808</td><td class="tbox nc">+108</td><td class="fbox">1,030</td><td class="fibox">762</td><td class="sibox">16</td>
+                    </tr>
+                </table>
+                <div id="div16" class="citys">
+                    <div class="cityhead">COVID-19 Citywise Status</div>
+                    <table class="divtbl016 divtbl">
+                        <tr class="divheading">
+                            <th>City</th><th class="rightth">Total Confirmed cases</th>
+                        </tr>
+                        <tr>
+                            <td>Alappuzha</td><td class="righttd">5</td>
+                        </tr>
+                        <tr>
+                            <td>Ernakulam</td><td class="righttd">24</td>
+                        </tr>
+                        <tr>
+                            <td>Idukki</td><td class="righttd">10</td>
+                        </tr>
+                        <tr>
+                            <td>Kannur</td><td class="righttd">78</td>
+                        </tr>
+                        <tr>
+                            <td>Kasaragod</td><td class="righttd">167</td>
+                        </tr>
+                        <tr>
+                            <td>Kollam</td><td class="righttd">9</td>
+                        </tr>
+                        <tr>
+                            <td>Kottayam</td><td class="righttd">3</td>
+                        </tr>
+                        <tr>
+                            <td>Kozhikode</td><td class="righttd">16</td>
+                        </tr>
+                        <tr>
+                            <td>Malappuram</td><td class="righttd">20</td>
+                        </tr>
+                        <tr>
+                            <td>Palakkad</td><td class="righttd">8</td>
+                        </tr>
+                        <tr>
+                            <td>Pathanamthitta</td><td class="righttd">17</td>
+                        </tr>
+                        <tr>
+                            <td>Thiruvananthapuram</td><td class="righttd">14</td>
+                        </tr>
+                        <tr>
+                            <td>Thrissur</td><td class="righttd">13</td>
+                        </tr>
+                        <tr>
+                            <td>Wayanad</td><td class="righttd">3</td>
+                        </tr>
+                    </table>
+                    <div class="endcity"></div>
+                </div>
+
+                <table class="tbl17 tbl">
+                    <tr class="even">
+                        <td class="firstbox"><input type="button"  value=">" id="btn17"> Ladakh</td><td class="sbox">99</td><td class="tbox nc">+12</td><td class="fbox">48</td><td class="fibox">50</td><td class="sibox">1</td>
+                    </tr>
+                </table>
+                <div id="div17" class="citys">
+                    <div class="cityhead">COVID-19 Citywise Status</div>
+                    <table class="divtbl17 divtbl">
+                        <tr class="divheading">
+                            <th>City</th><th class="rightth">Total Confirmed cases</th>
+                        </tr>
+                        <tr>
+                            <td>Kargil</td><td class="righttd">4</td>
+                        </tr>
+                        <tr>
+                            <td>Leh</td><td class="righttd">14</td>
+                        </tr>
+                    </table>
+                    <div class="endcity"></div>
+                </div>
+
+                <table class="tbl18 tbl">
+                    <tr>
+                        <td class="firstbox"><input type="button"  value=">" id="btn18"> Madhya Pradesh</td><td class="sbox">9,228</td><td class="tbox nc">+232</td><td class="fbox">2,721</td><td class="fibox">6,108</td><td class="sibox">399</td>
+                    </tr>
+                </table>
+                <div id="div18" class="citys">
+                    <div class="cityhead">COVID-19 Citywise Status</div>
+                    <table class="divtbl018 divtbl">
+                        <tr class="divheading">
+                            <th>City</th><th class="rightth">Total Confirmed cases</th>
+                        </tr>
+                        <tr>
+                            <td>Agar Malwa</td><td class="righttd">3</td>
+                        </tr>
+                        <tr>
+                            <td>Alirajpur</td><td class="righttd">1</td>
+                        </tr>
+                        <tr>
+                            <td>Barwani</td><td class="righttd">22</td>
+                        </tr>
+                        <tr>
+                            <td>Betul</td><td class="righttd">1</td>
+                        </tr>
+                        <tr>
+                            <td>Bhopal</td><td class="righttd">167</td>
+                        </tr>
+                        <tr>
+                            <td>Chhindwara</td><td class="righttd">4</td>
+                        </tr>
+                        <tr>
+                            <td>Dewas</td><td class="righttd">15</td>
+                        </tr>
+                        <tr>
+                            <td>Dhar</td><td class="righttd">3</td>
+                        </tr>
+                        <tr>
+                            <td>Gwalior</td><td class="righttd">6</td>
+                        </tr>
+                        <tr>
+                            <td>Hoshangabad</td><td class="righttd">16</td>
+                        </tr>
+                        <tr>
+                            <td>Indore</td><td class="righttd">586</td>
+                        </tr>
+                        <tr>
+                            <td>Jabalpur</td><td class="righttd">12</td>
+                        </tr>
+                        <tr>
+                            <td>Khandwa</td><td class="righttd">16</td>
+                        </tr>
+                        <tr>
+                            <td>Khargone</td><td class="righttd">39</td>
+                        </tr>
+                        <tr>
+                            <td>Mandsaur</td><td class="righttd">2</td>
+                        </tr>
+                        <tr>
+                            <td>Morena</td><td class="righttd">14</td>
+                        </tr>
+                        <tr>
+                            <td>Other Region*</td><td class="righttd">1</td>
+                        </tr>
+                        <tr>
+                            <td>Raisen</td><td class="righttd">4</td>
+                        </tr>
+                        <tr>
+                            <td>Ratlam</td><td class="righttd">12</td>
+                        </tr>
+                        <tr>
+                            <td>Sagar</td><td class="righttd">1</td>
+                        </tr>
+                        <tr>
+                            <td>Satna</td><td class="righttd">2</td>
+                        </tr>
+                        <tr>
+                            <td>Shajapur</td><td class="righttd">4</td>
+                        </tr>
+                        <tr>
+                            <td>Sheopur</td><td class="righttd">3</td>
+                        </tr>
+                        <tr>
+                            <td>Shivpuri</td><td class="righttd">2</td>
+                        </tr>
+                        <tr>
+                            <td>Tikamgarh</td><td class="righttd">1</td>
+                        </tr>
+                        <tr>
+                            <td>Ujjain</td><td class="righttd">30</td>
+                        </tr>
+                        <tr>
+                            <td>Vidisha</td><td class="righttd">13</td>
+                        </tr>
+                    </table>
+                    <div class="endcity"></div>
+                </div>
+
+                <table class="tbl19 tbl">
+                    <tr class="even">
+                        <td class="firstbox"><input type="button"  value=">" id="btn19"> Maharashtra</td><td class="sbox">82,968</td><td class="tbox nc">+2739</td><td class="fbox">42,609</td><td class="fibox">37,390</td><td class="sibox">2,969</td>
+                    </tr>
+                </table>
+                <div id="div19" class="citys">
+                    <div class="cityhead">COVID-19 Citywise Status</div>
+                    <table class="divtbl19 divtbl">
+                        <tr class="divheading">
+                            <th>City</th><th class="rightth">Total Confirmed cases</th>
+                        </tr>
+                        <tr>
+                            <td>Ahmadnagar</td><td class="righttd">190</td>
+                        </tr>
+                        <tr>
+                            <td>Akola</td><td class="righttd">762</td>
+                        </tr>
+                        <tr>
+                            <td>Amravati</td><td class="righttd">289</td>
+                        </tr>
+                        <tr>
+                            <td>Aurangabad</td><td class="righttd">1,861</td>
+                        </tr>
+                        <tr>
+                            <td>Beed</td><td class="righttd">53</td>
+                        </tr>
+                        <tr>
+                            <td>Buldhana</td><td class="righttd">86</td>
+                        </tr>
+                        <tr>
+                            <td>Chandrapur</td><td class="righttd">31</td>
+                        </tr>
+                        <tr>
+                            <td>Dhule</td><td class="righttd">231</td>
+                        </tr>
+                        <tr>
+                            <td>Gondiya</td><td class="righttd">68</td>
+                        </tr>
+                        <tr>
+                            <td>Hingoli</td><td class="righttd">206</td>
+                        </tr>
+                        <tr>
+                            <td>Jalgaon</td><td class="righttd">963</td>
+                        </tr>
+                        <tr>
+                            <td>Jalna</td><td class="righttd">177</td>
+                        </tr>
+                        <tr>
+                            <td>Kolhapur</td><td class="righttd">638</td>
+                        </tr>
+                        <tr>
+                            <td>Latur</td><td class="righttd">135</td>
+                        </tr>
+                        <tr>
+                            <td>Mumbai</td><td class="righttd">47,358</td>
+                        </tr>
+                        <tr>
+                            <td>Nagpur</td><td class="righttd">738</td>
+                        </tr>
+                        <tr>
+                            <td>Nashik</td><td class="righttd">1,412</td>
+                        </tr>
+                        <tr>
+                            <td>Osmanabad</td><td class="righttd">118</td>
+                        </tr>
+                        <tr>
+                            <td>Other States*</td><td class="righttd">65</td>
+                        </tr>
+                        <tr>
+                            <td>Palghar</td><td class="righttd">1,386</td>
+                        </tr>
+                        <tr>
+                            <td>Pune</td><td class="righttd">9,289</td>
+                        </tr>
+                        <tr>
+                            <td>Raigarh</td><td class="righttd">1,411</td>
+                        </tr>
+                        <tr>
+                            <td>Ratnagiri</td><td class="righttd">352</td>
+                        </tr>
+                        <tr>
+                            <td>Sangli</td><td class="righttd">145</td>
+                        </tr>
+                        <tr>
+                            <td>Satara</td><td class="righttd">626</td>
+                        </tr>
+                        <tr>
+                            <td>Sindhudurg</td><td class="righttd">113</td>
+                        </tr>
+                        <tr>
+                            <td>Solapur</td><td class="righttd">1,261</td>
+                        </tr>
+                        <tr>
+                            <td>Thane</td><td class="righttd">12,464</td>
+                        </tr>
+                        <tr>
+                            <td>Washim</td><td class="righttd">9</td>
+                        </tr>
+                        <tr>
+                            <td>Yavatmal</td><td class="righttd">160</td>
+                        </tr>
+                    </table>
+                    <div class="endcity"></div>
+                </div>
+
+                <table class="tbl20 tbl">
+                    <tr>
+                        <td class="firstbox"><input type="button"  value=">" id="btn20"> Manipur</td><td class="sbox">157</td><td class="tbox nc">+25</td><td class="fbox">105</td><td class="fibox">52</td><td class="sibox">0</td>
+                    </tr>
+                </table>
+                <div id="div20" class="citys">
+                    <div class="cityhead">COVID-19 Citywise Status</div>
+                    <table class="divtbl20 divtbl">
+                        <tr class="divheading">
+                            <th>City</th><th class="rightth">Total Confirmed cases</th>
+                        </tr>
+                        <tr>
+                            <td>Imphal West</td><td class="righttd">1</td>
+                        </tr>
+                        <tr>
+                            <td>Unknown</td><td class="righttd">1</td>
+                        </tr>
+                    </table>
+                    <div class="endcity"></div>
+                </div>
+
+                <table class="tbl21 tbl">
+                    <tr class="even">
+                        <td class="firstbox"><input type="button"  value=">" id="btn21"> Mizoram</td><td class="sbox">24</td><td class="tbox nc">+2</td><td class="fbox">23</td><td class="fibox">1</td><td class="sibox">0</td>
+                    </tr>
+                </table>
+                <div id="div21" class="citys">
+                    <div class="cityhead">COVID-19 Citywise Status</div>
+                    <table class="divtbl21 divtbl">
+                        <tr class="divheading">
+                            <th>City</th><th class="rightth">Total Confirmed cases</th>
+                        </tr>
+                        <tr>
+                            <td>Aizawl</td><td class="righttd">1</td>
+                        </tr>
+                    </table>
+                    <div class="endcity"></div>
+                </div>
+
+                <table class="tbl22 tbl">
+                    <tr>
+                        <td class="firstbox"><input type="button"  value=">" id="btn22"> Odisha</td><td class="sbox">2,781</td><td class="tbox nc">+173</td><td class="fbox">1,055</td><td class="fibox">1716</td><td class="sibox">10</td>
+                    </tr>
+                </table>
+                <div id="div22" class="citys">
+                    <div class="cityhead">COVID-19 Citywise Status</div>
+                    <table class="divtbl22 divtbl">
+                        <tr class="divheading">
+                            <th>City</th><th class="rightth">Total Confirmed cases</th>
+                        </tr>
+                        <tr>
+                            <td>Bhadrak</td><td class="righttd">3</td>
+                        </tr>
+                        <tr>
+                            <td>Cuttack</td><td class="righttd">1</td>
+                        </tr>
+                        <tr>
+                            <td>Dhenkanal</td><td class="righttd">1</td>
+                        </tr>
+                        <tr>
+                            <td>Jajapur</td><td class="righttd">2</td>
+                        </tr>
+                        <tr>
+                            <td>Kalahandi</td><td class="righttd">2</td>
+                        </tr>
+                        <tr>
+                            <td>Kendrapara</td><td class="righttd">2</td>
+                        </tr>
+                        <tr>
+                            <td>Khordha</td><td class="righttd">46</td>
+                        </tr>
+                        <tr>
+                            <td>Puri</td><td class="righttd">1</td>
+                        </tr>
+                        <tr>
+                            <td>Sundargarh</td><td class="righttd">2</td>
+                        </tr>
+                    </table>
+                    <div class="endcity"></div>
+                </div>
+
+                <table class="tbl23 tbl">
+                    <tr class="even">
+                        <td class="firstbox"><input type="button"  value=">" id="btn23"> Puducherry</td><td class="sbox">107</td><td class="tbox nc">+3</td><td class="fbox">59</td><td class="fibox">48</td><td class="sibox">0</td>
+                    </tr>
+                </table>
+                <div id="div23" class="citys">
+                    <div class="cityhead">COVID-19 Citywise Status</div>
+                    <table class="divtbl23 divtbl">
+                        <tr class="divheading">
+                            <th>City</th><th class="rightth">Total Confirmed cases</th>
+                        </tr>
+                        <tr>
+                            <td>Mahe</td><td class="righttd">1</td>
+                        </tr>
+                        <tr>
+                            <td>Puducherry</td><td class="righttd">6</td>
+                        </tr>
+                    </table>
+                    <div class="endcity"></div>
+                </div>
+
+                <table class="tbl24 tbl">
+                    <tr>
+                        <td class="firstbox"><input type="button"  value=">" id="btn24"> Punjab</td><td class="sbox">2,515</td><td class="tbox nc">+54</td><td class="fbox">373</td><td class="fibox">2,092</td><td class="sibox">50</td>
+                    </tr>
+                </table>
+                <div id="div24" class="citys">
+                    <div class="cityhead">COVID-19 Citywise Status</div>
+                    <table class="divtbl24 divtbl">
+                        <tr class="divheading">
+                            <th>City</th><th class="rightth">Total Confirmed cases</th>
+                        </tr>
+                        <tr>
+                            <td>Amritsar</td><td class="righttd">11</td>
+                        </tr>
+                        <tr>
+                            <td>Barnala</td><td class="righttd">2</td>
+                        </tr>
+                        <tr>
+                            <td>Faridkot</td><td class="righttd">3</td>
+                        </tr>
+                        <tr>
+                            <td>Fatehgarh Sahib</td><td class="righttd">2</td>
+                        </tr>
+                        <tr>
+                            <td>Gurdaspur</td><td class="righttd">1</td>
+                        </tr>
+                        <tr>
+                            <td>Hoshiarpur</td><td class="righttd">7</td>
+                        </tr>
+                        <tr>
+                            <td>Jalandhar</td><td class="righttd">25</td>
+                        </tr>
+                        <tr>
+                            <td>Kapurthala</td><td class="righttd">2</td>
+                        </tr>
+                        <tr>
+                            <td>Ludhiana</td><td class="righttd">11</td>
+                        </tr>
+                        <tr>
+                            <td>Mansa</td><td class="righttd">11</td>
+                        </tr>
+                        <tr>
+                            <td>Moga</td><td class="righttd">4</td>
+                        </tr>
+                        <tr>
+                            <td>Pathankot</td><td class="righttd">22</td>
+                        </tr>
+                        <tr>
+                            <td>Patiala</td><td class="righttd">3</td>
+                        </tr>
+                        <tr>
+                            <td>Rupnagar</td><td class="righttd">3</td>
+                        </tr>
+                        <tr>
+                            <td>S.A.S. Nagar</td><td class="righttd">56</td>
+                        </tr>
+                        <tr>
+                            <td>Sangrur</td><td class="righttd">3</td>
+                        </tr>
+                        <tr>
+                            <td>Shahid Bhagat Singh Nagar</td><td class="righttd">19</td>
+                        </tr>
+                        <tr>
+                            <td>Sri Muktsar Sahib</td><td class="righttd">1</td>
+                        </tr>
+                    </table>
+                    <div class="endcity"></div>
+                </div>
+
+                <table class="tbl25 tbl">
+                    <tr class="even">
+                        <td class="firstbox"><input type="button"  value=">" id="btn25"> Rajasthan</td><td class="sbox">10,337</td><td class="tbox nc">+253</td><td class="fbox">2,724</td><td class="fibox">7,384</td><td class="sibox">219</td>
+                    </tr>
+                </table>
+                <div id="div25" class="citys">
+                    <div class="cityhead">COVID-19 Citywise Status</div>
+                    <table class="divtbl25 divtbl">
+                        <tr class="divheading">
+                            <th>City</th><th class="rightth">Total Confirmed cases</th>
+                        </tr>
+                        <tr>
+                            <td>Ajmer</td><td class="righttd">6</td>
+                        </tr>
+                        <tr>
+                            <td>Alwar</td><td class="righttd">7</td>
+                        </tr>
+                        <tr>
+                            <td>Banswara</td><td class="righttd">59</td>
+                        </tr>
+                        <tr>
+                            <td>Barmer</td><td class="righttd">1</td>
+                        </tr>
+                        <tr>
+                            <td>Bharatpur</td><td class="righttd">20</td>
+                        </tr>
+                        <tr>
+                            <td>Bhilwara</td><td class="righttd">28</td>
+                        </tr>
+                        <tr>
+                            <td>Bikaner</td><td class="righttd">35</td>
+                        </tr>
+                        <tr>
+                            <td>Churu</td><td class="righttd">14</td>
+                        </tr>
+                        <tr>
+                            <td>Dausa</td><td class="righttd">12</td>
+                        </tr>
+                        <tr>
+                            <td>Dhaulpur</td><td class="righttd">1</td>
+                        </tr>
+                        <tr>
+                            <td>Dungarpur</td><td class="righttd">5</td>
+                        </tr>
+                        <tr>
+                            <td>Evacuees</td><td class="righttd">8</td>
+                        </tr>
+                        <tr>
+                            <td>Evacuees</td><td class="righttd">46</td>
+                        </tr>
+                        <tr>
+                            <td>Hanumangarh</td><td class="righttd">2</td>
+                        </tr>
+                        <tr>
+                            <td>Italians</td><td class="righttd">2</td>
+                        </tr>
+                        <tr>
+                            <td>Jaipur</td><td class="righttd">483</td>
+                        </tr>
+                        <tr>
+                            <td>Jaisalmer</td><td class="righttd">30</td>
+                        </tr>
+                        <tr>
+                            <td>Jhalawar</td><td class="righttd">17</td>
+                        </tr>
+                        <tr>
+                            <td>Jhunjhunu</td><td class="righttd">35</td>
+                        </tr>
+                        <tr>
+                            <td>Jodhpur</td><td class="righttd">116</td>
+                        </tr>
+                        <tr>
+                            <td>Karauli</td><td class="righttd">3</td>
+                        </tr>
+                        <tr>
+                            <td>Kota</td><td class="righttd">86</td>
+                        </tr>
+                        <tr>
+                            <td>Nagaur</td><td class="righttd">7</td>
+                        </tr>
+                        <tr>
+                            <td>Pali</td><td class="righttd">2</td>
+                        </tr>
+                        <tr>
+                            <td>Pratapgarh</td><td class="righttd">2</td>
+                        </tr>
+                        <tr>
+                            <td>Sikar</td><td class="righttd">2</td>
+                        </tr>
+                        <tr>
+                            <td>Tonk</td><td class="righttd">71</td>
+                        </tr>
+                        <tr>
+                            <td>Udaipur</td><td class="righttd">4</td>
+                        </tr>
+                    </table>
+                    <div class="endcity"></div>
+                </div>
+
+                <table class="tbl26 tbl">
+                    <tr>
+                        <td class="firstbox"><input type="button"  value=">" id="btn26"> Tamil Nadu</td><td class="sbox">30,172</td><td class="tbox nc">+1,478</td><td class="fbox">13,523</td><td class="fibox">16,395</td><td class="sibox">254</td>
+                    </tr>
+                </table>
+                <div id="div26" class="citys">
+                    <div class="cityhead">COVID-19 Citywise Status</div>
+                    <table class="divtbl26 divtbl">
+                        <tr class="divheading">
+                            <th>City</th><th class="rightth">Total Confirmed cases</th>
+                        </tr>
+                        <tr>
+                            <td>Ariyalur</td><td class="righttd">1</td>
+                        </tr>
+                        <tr>
+                            <td>Chengalpattu</td><td class="righttd">47</td>
+                        </tr>
+                        <tr>
+                            <td>Chennai</td><td class="righttd">219</td>
+                        </tr>
+                        <tr>
+                            <td>Coimbatore</td><td class="righttd">126</td>
+                        </tr>
+                        <tr>
+                            <td>Cuddalore</td><td class="righttd">20</td>
+                        </tr>
+                        <tr>
+                            <td>Dindigul</td><td class="righttd">65</td>
+                        </tr>
+                        <tr>
+                            <td>Erode</td><td class="righttd">70</td>
+                        </tr>
+                        <tr>
+                            <td>Kallakurichi</td><td class="righttd">3</td>
+                        </tr>
+                        <tr>
+                            <td>Kancheepuram</td><td class="righttd">7</td>
+                        </tr>
+                        <tr>
+                            <td>Kanniyakumari</td><td class="righttd">16</td>
+                        </tr>
+                        <tr>
+                            <td>Karur</td><td class="righttd">40</td>
+                        </tr>
+                        <tr>
+                            <td>Madurai</td><td class="righttd">41</td>
+                        </tr>
+                        <tr>
+                            <td>Nagapattinam</td><td class="righttd">38</td>
+                        </tr>
+                        <tr>
+                            <td>Namakkal</td><td class="righttd">45</td>
+                        </tr>
+                        <tr>
+                            <td>Perambalur</td><td class="righttd">1</td>
+                        </tr>
+                        <tr>
+                            <td>Ramanathapuram</td><td class="righttd">7</td>
+                        </tr>
+                        <tr>
+                            <td>Ranipet</td><td class="righttd">38</td>
+                        </tr>
+                        <tr>
+                            <td>Salem</td><td class="righttd">22</td>
+                        </tr>
+                        <tr>
+                            <td>Sivaganga</td><td class="righttd">11</td>
+                        </tr>
+                        <tr>
+                            <td>Tenkasi</td><td class="righttd">6</td>
+                        </tr>
+                        <tr>
+                            <td>Thanjavur</td><td class="righttd">16</td>
+                        </tr>
+                        <tr>
+                            <td>The Nilgiris</td><td class="righttd">9</td>
+                        </tr>
+                        <tr>
+                            <td>Theni</td><td class="righttd">42</td>
+                        </tr>
+                        <tr>
+                            <td>Thiruvallur</td><td class="righttd">41</td>
+                        </tr>
+                        <tr>
+                            <td>Thiruvarur</td><td class="righttd">18</td>
+                        </tr>
+                        <tr>
+                            <td>Thoothukkudi</td><td class="righttd">26</td>
+                        </tr>
+                        <tr>
+                            <td>Tiruchirappalli</td><td class="righttd">43</td>
+                        </tr>
+                        <tr>
+                            <td>Tirunelveli</td><td class="righttd">59</td>
+                        </tr>
+                        <tr>
+                            <td>Tirupathur</td><td class="righttd">17</td>
+                        </tr>
+                        <tr>
+                            <td>Tiruppur</td><td class="righttd">79</td>
+                        </tr>
+                        <tr>
+                            <td>Tiruvannamalai</td><td class="righttd">8</td>
+                        </tr>
+                        <tr>
+                            <td>Vellore</td><td class="righttd">17</td>
+                        </tr>
+                        <tr>
+                            <td>Viluppuram</td><td class="righttd">27</td>
+                        </tr>
+                        <tr>
+                            <td>Virudhunagar</td><td class="righttd">17</td>
+                        </tr>
+                        <tr>
+                            <td>Unknown</td><td class="righttd">25</td>
+                        </tr>
+                    </table>
+                    <div class="endcity"></div>
+                </div>
+
+                <table class="tbl27 tbl">
+                    <tr class="even">
+                        <td class="firstbox"><input type="button"  value=">" id="btn27"> Telengana</td><td class="sbox">3,496</td><td class="tbox nc">+206</td><td class="fbox">1,663</td><td class="fibox">1,710</td><td class="sibox">123</td>
+                    </tr>
+                </table>
+                <div id="div27" class="citys">
+                    <div class="cityhead">COVID-19 Citywise Status</div>
+                    <table class="divtbl27 divtbl">
+                        <tr class="divheading">
+                            <th>City</th><th class="rightth">Total Confirmed cases</th>
+                        </tr>
+                        <tr>
+                            <td>Adilabad</td><td class="righttd">11</td>
+                        </tr>
+                        <tr>
+                            <td>Bhadradri Kothagudem</td><td class="righttd">4</td>
+                        </tr>
+                        <tr>
+                            <td>Hyderabad</td><td class="righttd">307</td>
+                        </tr>
+                        <tr>
+                            <td>Jagitial</td><td class="righttd">2</td>
+                        </tr>
+                        <tr>
+                            <td>Jangoan</td><td class="righttd">2</td>
+                        </tr>
+                        <tr>
+                            <td>Jayashankar</td><td class="righttd">3</td>
+                        </tr>
+                        <tr>
+                            <td>Jogulamba Gadwal</td><td class="righttd">19</td>
+                        </tr>
+                        <tr>
+                            <td>Kamareddy</td><td class="righttd">11</td>
+                        </tr>
+                        <tr>
+                            <td>Karimnagar</td><td class="righttd">18</td>
+                        </tr>
+                        <tr>
+                            <td>Khammam</td><td class="righttd">7</td>
+                        </tr>
+                        <tr>
+                            <td>Kumuram Bheem Asifabad</td><td class="righttd">3</td>
+                        </tr>
+                        <tr>
+                            <td>Mahabubabad</td><td class="righttd">1</td>
+                        </tr>
+                        <tr>
+                            <td>Mahabubnagar</td><td class="righttd">11</td>
+                        </tr>
+                        <tr>
+                            <td>Medak</td><td class="righttd">6</td>
+                        </tr>
+                        <tr>
+                            <td>Medchal Malkajgiri</td><td class="righttd">23</td>
+                        </tr>
+                        <tr>
+                            <td>Mulugu</td><td class="righttd">2</td>
+                        </tr>
+                        <tr>
+                            <td>Nagarkurnool</td><td class="righttd">2</td>
+                        </tr>
+                        <tr>
+                            <td>Nalgonda</td><td class="righttd">12</td>
+                        </tr>
+                        <tr>
+                            <td>Nirmal</td><td class="righttd">17</td>
+                        </tr>
+                        <tr>
+                            <td>Nizamabad</td><td class="righttd">51</td>
+                        </tr>
+                        <tr>
+                            <td>Peddapalli</td><td class="righttd">2</td>
+                        </tr>
+                        <tr>
+                            <td>Rajanna Sircilla</td><td class="righttd">1</td>
+                        </tr>
+                        <tr>
+                            <td>Ranga Reddy</td><td class="righttd">34</td>
+                        </tr>
+                        <tr>
+                            <td>Sangareddy</td><td class="righttd">7</td>
+                        </tr>
+                        <tr>
+                            <td>Siddipet</td><td class="righttd">1</td>
+                        </tr>
+                        <tr>
+                            <td>Suryapet</td><td class="righttd">23</td>
+                        </tr>
+                        <tr>
+                            <td>Vikarabad</td><td class="righttd">29</td>
+                        </tr>
+                        <tr>
+                            <td>Warangal Urban</td><td class="righttd">25</td>
+                        </tr>
+                        <tr>
+                            <td>Unknown</td><td class="righttd">16</td>
+                        </tr>
+                    </table>
+                    <div class="endcity"></div>
+                </div>
+
+                <table class="tbl28 tbl">
+                    <tr>
+                        <td class="firstbox"><input type="button"  value=">" id="btn28"> Tripura</td><td class="sbox">694</td><td class="tbox">0</td><td class="fbox">521</td><td class="fibox">173</td><td class="sibox">0</td>
+                    </tr>
+                </table>
+                <div id="div28" class="citys">
+                    <div class="cityhead">COVID-19 Citywise Status</div>
+                    <table class="divtbl28 divtbl">
+                        <tr class="divheading">
+                            <th>City</th><th class="rightth">Total Confirmed cases</th>
+                        </tr>
+                        <tr>
+                            <td>Gomati</td><td class="righttd">1</td>
+                        </tr>
+                        <tr>
+                            <td>North Tripura</td><td class="righttd">1</td>
+                        </tr>
+                    </table>
+                    <div class="endcity"></div>
+                </div>
+
+                <table class="tbl29 tbl">
+                    <tr class="even">
+                        <td class="firstbox"><input type="button"  value=">" id="btn29"> Uttar Pradesh</td><td class="sbox">9,733</td><td class="tbox">0</td><td class="fbox">3828</td><td class="fibox">5,648</td><td class="sibox">257</td>
+                    </tr>
+                </table>
+                <div id="div29" class="citys">
+                    <div class="cityhead">COVID-19 Citywise Status</div>
+                    <table class="divtbl29 divtbl">
+                        <tr class="divheading">
+                            <th>City</th><th class="rightth">Total Confirmed cases</th>
+                        </tr>
+                        <tr>
+                            <td>Agra</td><td class="righttd">150</td>
+                        </tr>
+                        <tr>
+                            <td>Amroha</td><td class="righttd">9</td>
+                        </tr>
+                        <tr>
+                            <td>Auraiya</td><td class="righttd">5</td>
+                        </tr>
+                        <tr>
+                            <td>Azamgarh</td><td class="righttd">6</td>
+                        </tr>
+                        <tr>
+                            <td>Baghpat</td><td class="righttd">14</td>
+                        </tr>
+                        <tr>
+                            <td>Banda</td><td class="righttd">3</td>
+                        </tr>
+                        <tr>
+                            <td>Bara Banki</td><td class="righttd">1</td>
+                        </tr>
+                        <tr>
+                            <td>Bareilly</td><td class="righttd">6</td>
+                        </tr>
+                        <tr>
+                            <td>Basti</td><td class="righttd">16</td>
+                        </tr>
+                        <tr>
+                            <td>Bhadohi</td><td class="righttd">1</td>
+                        </tr>
+                        <tr>
+                            <td>Bijnor</td><td class="righttd">9</td>
+                        </tr>
+                        <tr>
+                            <td>Budaun</td><td class="righttd">2</td>
+                        </tr>
+                        <tr>
+                            <td>Bulandshahr</td><td class="righttd">12</td>
+                        </tr>
+                        <tr>
+                            <td>Etawah</td><td class="righttd">1</td>
+                        </tr>
+                        <tr>
+                            <td>Firozabad</td><td class="righttd">25</td>
+                        </tr>
+                        <tr>
+                            <td>Gautam Buddha Nagar</td><td class="righttd">82</td>
+                        </tr>
+                        <tr>
+                            <td>Ghaziabad</td><td class="righttd">27</td>
+                        </tr>
+                        <tr>
+                            <td>Ghazipur</td><td class="righttd">5</td>
+                        </tr>
+                        <tr>
+                            <td>Hapur</td><td class="righttd">15</td>
+                        </tr>
+                        <tr>
+                            <td>Hardoi</td><td class="righttd">2</td>
+                        </tr>
+                        <tr>
+                            <td>Hathras</td><td class="righttd">4</td>
+                        </tr>
+                        <tr>
+                            <td>Jaunpur</td><td class="righttd">4</td>
+                        </tr>
+                        <tr>
+                            <td>Kanpur Nagar</td><td class="righttd">18</td>
+                        </tr>
+                        <tr>
+                            <td>Kasganj</td><td class="righttd">3</td>
+                        </tr>
+                        <tr>
+                            <td>Kaushambi</td><td class="righttd">2</td>
+                        </tr>
+                        <tr>
+                            <td>Kheri</td><td class="righttd">4</td>
+                        </tr>
+                        <tr>
+                            <td>Lucknow</td><td class="righttd">75</td>
+                        </tr>
+                        <tr>
+                            <td>Mahrajganj</td><td class="righttd">6</td>
+                        </tr>
+                        <tr>
+                            <td>Mathura</td><td class="righttd">4</td>
+                        </tr>
+                        <tr>
+                            <td>Meerut</td><td class="righttd">65</td>
+                        </tr>
+                        <tr>
+                            <td>Mirzapur</td><td class="righttd">2</td>
+                        </tr>
+                        <tr>
+                            <td>Moradabad</td><td class="righttd">21</td>
+                        </tr>
+                        <tr>
+                            <td>Muzaffarnagar</td><td class="righttd">7</td>
+                        </tr>
+                        <tr>
+                            <td>Pilibhit</td><td class="righttd">2</td>
+                        </tr>
+                        <tr>
+                            <td>Pratapgarh</td><td class="righttd">6</td>
+                        </tr>
+                        <tr>
+                            <td>Prayagraj</td><td class="righttd">1</td>
+                        </tr>
+                        <tr>
+                            <td>Rae Bareli</td><td class="righttd">2</td>
+                        </tr>
+                        <tr>
+                            <td>Rampur</td><td class="righttd">6</td>
+                        </tr>
+                        <tr>
+                            <td>Saharanpur</td><td class="righttd">53</td>
+                        </tr>
+                        <tr>
+                            <td>Sambhal</td><td class="righttd">6</td>
+                        </tr>
+                        <tr>
+                            <td>Shahjahanpur</td><td class="righttd">1</td>
+                        </tr>
+                        <tr>
+                            <td>Shamli</td><td class="righttd">22</td>
+                        </tr>
+                        <tr>
+                            <td>Sitapur</td><td class="righttd">13</td>
+                        </tr>
+                        <tr>
+                            <td>Varanasi</td><td class="righttd">9</td>
+                        </tr>
+                        <tr>
+                            <td>Unknown</td><td class="righttd">8</td>
+                        </tr>
+                    </table>
+                    <div class="endcity"></div>
+                </div>
+
+                <table class="tbl30 tbl">
+                    <tr>
+                        <td class="firstbox"><input type="button"  value=">" id="btn30"> Uttarakhand</td><td class="sbox">1,245</td><td class="tbox nc">+30</td><td class="fbox">807</td><td class="fibox">422</td><td class="sibox">11</td>
+                    </tr>
+                </table>
+                <div id="div30" class="citys">
+                    <div class="cityhead">COVID-19 Citywise Status</div>
+                    <table class="divtbl30 divtbl">
+                        <tr class="divheading">
+                            <th>City</th><th class="rightth">Total Confirmed cases</th>
+                        </tr>
+                        <tr>
+                            <td>Almora</td><td class="righttd">1</td>
+                        </tr>
+                        <tr>
+                            <td>Dehradun</td><td class="righttd">18</td>
+                        </tr>
+                        <tr>
+                            <td>Haridwar</td><td class="righttd">3</td>
+                        </tr>
+                        <tr>
+                            <td>Nainital</td><td class="righttd">8</td>
+                        </tr>
+                        <tr>
+                            <td>Pauri Garhwal</td><td class="righttd">2</td>
+                        </tr>
+                        <tr>
+                            <td>Udham Singh Nagar</td><td class="righttd">3</td>
+                        </tr>
+                        <tr>
+                            <td>Unknown</td><td class="righttd">2</td>
+                        </tr>
+                    </table>
+                    <div class="endcity"></div>
+                </div>
+
+                <table class="tbl31 tbl">
+                    <tr class="even">
+                        <td class="firstbox"><input type="button"  value=">" id="btn31"> West Bengal</td><td class="sbox">7,738</td><td class="tbox nc">+435</td><td class="fbox">4,236</td><td class="fibox">3,119</td><td class="sibox">383</td>
+                    </tr>
+                </table>
+                <div id="div31" class="citys">
+                    <div class="cityhead">COVID-19 Citywise Status</div>
+                    <table class="divtbl31 divtbl">
+                        <tr class="divheading">
+                            <th>City</th><th class="rightth">Total Confirmed cases</th>
+                        </tr>
+                        <tr>
+                            <td>Hooghly</td><td class="righttd">1</td>
+                        </tr>
+                        <tr>
+                            <td>Howrah</td><td class="righttd">1</td>
+                        </tr>
+                        <tr>
+                            <td>Kalimpong</td><td class="righttd">1</td>
+                        </tr>
+                        <tr>
+                            <td>Kolkata</td><td class="righttd">11</td>
+                        </tr>
+                        <tr>
+                            <td>Medinipur East</td><td class="righttd">3</td>
+                        </tr>
+                        <tr>
+                            <td>Nadia</td><td class="righttd">5</td>
+                        </tr>
+                        <tr>
+                            <td>North 24 Parganas</td><td class="righttd">4</td>
+                        </tr>
+                        <tr>
+                            <td>South 24 Parganas</td><td class="righttd">1</td>
+                        </tr>
+                        <tr>
+                            <td>Unknown</td><td class="righttd">204</td>
+                        </tr>
+                    </table>
+                    <div class="endcity"></div>
+                </div>
+            </div>
+            <div class="end"></div>
+        </div>
+
+        <!-- Script -->
+        <script src="../javascript/indiameter.js"></script>
+       
+        <!-- Resources -->
+        <h2 class="socialheading">RESOURCES</h2>
+        <div class="resources">
+            <div class="leftresources">
+                <a href="traveladvisories.html" target="iframe_right"><p>Travel Advisories</p></a>
+                <a href="behaviouralhealth.html" target="iframe_right"><p>Behavioural Health : Psycho-Social toll free helpline - 08046110007</p></a>
+                <a href="citizens.html" target="iframe_right"><p>Citizens</p></a>
+                <a href="hospitals.html" target="iframe_right"><p>Hospitals</p></a>
+                <a href="trainingmaterial.html" target="iframe_right"><p>Training Material</p></a>
+                <a href="states.html" target="iframe_right"><p>States / Departments / Ministries</p></a>
+                <a href="employees.html" target="iframe_right"><p>Employees</p></a>
+                <a href="awarenessmaterial.html" target="iframe_right"><p>Awareness Material</p></a>
+            </div>
+            <div class="rightresources">
+                <iframe class="frame" src="traveladvisories.html" name="iframe_right"></iframe>
+            </div>
+        </div>
+
+        <h2 class="socialheading">INDAN GOVERNMENT SOCIAL HUB</h2>
+        <div class="socialhub">
+          <a class="sociallink" href="https://api.whatsapp.com/send?phone=919013353535&text=Hi&source=&data=&app_absent=" target="_blank">
+            <div class="whatsapp hub">
+              <div class="box">
+                <svg id="whatsapp" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="whatsapp" class="svg-inline--fa fa-whatsapp fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path></svg>
+                <p id="whatsapptext">WhatsApp</p>
+              </div>
+            </div>
+          </a>
+
+          <a class="sociallink" href="https://www.facebook.com/MyGovIndia/" target="_blank">
+            <div class="facebook_page hub">
+              <div class="box">
+                <svg id="facebook" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook" class="svg-inline--fa fa-facebook fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg>
+                <p id="facebooktext">Facebook</p>
+              </div>
+            </div>
+          </a>
+
+          <a class="sociallink" href="https://www.messenger.com/t/MyGovIndia" target="_blank">
+            <div class="facebook_messenger hub">
+              <div class="box">
+                <svg id="facebook_messenger" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-messenger" class="svg-inline--fa fa-facebook-messenger fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256.55 8C116.52 8 8 110.34 8 248.57c0 72.3 29.71 134.78 78.07 177.94 8.35 7.51 6.63 11.86 8.05 58.23A19.92 19.92 0 0 0 122 502.31c52.91-23.3 53.59-25.14 62.56-22.7C337.85 521.8 504 423.7 504 248.57 504 110.34 396.59 8 256.55 8zm149.24 185.13l-73 115.57a37.37 37.37 0 0 1-53.91 9.93l-58.08-43.47a15 15 0 0 0-18 0l-78.37 59.44c-10.46 7.93-24.16-4.6-17.11-15.67l73-115.57a37.36 37.36 0 0 1 53.91-9.93l58.06 43.46a15 15 0 0 0 18 0l78.41-59.38c10.44-7.98 24.14 4.54 17.09 15.62z"></path></svg>
+                <p id="facebook_messengertext">Facebook Messenger</p>
+              </div>
+            </div>
+          </a>
+
+          <a class="sociallink" href="https://www.instagram.com/mygovindia/" target="_blank">
+            <div class="instagram hub">
+              <div class="box">
+                <svg id="instagram" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" class="svg-inline--fa fa-instagram fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
+                <p id="instagramtext">Instagram</p>
+              </div>
+            </div>
+          </a>
+
+          <a class="sociallink" href="https://twitter.com/mygovindia" target="_blank">
+            <div class="twitter hub">
+              <div class="box">
+                <svg id="twitter" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="svg-inline--fa fa-twitter fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>
+                <p id="twittertext">Twitter</p>
+              </div>
+            </div>
+          </a>
+
+          <a class="sociallink" href="https://www.linkedin.com/company/mygov-india/" target="_blank">
+            <div class="linkedin hub">
+              <div class="box">
+                <svg id="linkedin" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin-in" class="svg-inline--fa fa-linkedin-in fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>
+                <p id="linkedintext">Linkedin</p>
+              </div>
+            </div>
+          </a>
+
+          <a class="sociallink" href="https://www.youtube.com/mygovindia" target="_blank">
+            <div class="youtube hub">
+              <div class="box">
+                <svg id="youtube" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="youtube" class="svg-inline--fa fa-youtube fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg>
+                <p id="youtubetext">Youtube</p>
+              </div>
+            </div>
+          </a>
+
+          <a class="sociallink" href="https://t.me/MyGovCoronaNewsdesk" target="_blank">
+            <div class="telegram hub">
+              <div class="box">
+                <svg id="telegram" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="telegram" class="svg-inline--fa fa-telegram fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm121.8 169.9l-40.7 191.8c-3 13.6-11.1 16.9-22.4 10.5l-62-45.7-29.9 28.8c-3.3 3.3-6.1 6.1-12.5 6.1l4.4-63.1 114.9-103.8c5-4.4-1.1-6.9-7.7-2.5l-142 89.4-61.2-19.1c-13.3-4.2-13.6-13.3 2.8-19.7l239.1-92.2c11.1-4 20.8 2.7 17.2 19.5z"></path></svg>
+                <p id="telegramtext">Telegram</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <footer>
+            <div class="inner_footer_first">
+                <h3 class="footer_heading">Coronavirus (COVID-19) Disease</h3>
+                <p class="footer_details">Coronaviruses are a family of viruses that range from the common cold to MERS coronavirus, which is Middle East Respiratory Syndrome coronavirus and SARs, Severe acute respiratory syndrome coronavirus. Corona viruses are circulating in animals and some of these coronaviruses have the capability of transmitting between animals and humans. We call that a spillover event.Corona viruses are circulating in animals and some of these coronaviruses have the capability of transmitting between animals and humans. We call that a spillover event.</p>
+            </div>
+            <div class="inner_footer_second">
+                <h3 class="footer_heading fh2">Do You Know About That</h3>
+                <p class="footer_links"><a class="fl" href="newsroom.html" target="_blank">Daily News Details.</a></p>
+                <p class="footer_links"><a class="fl" href="information.html">Important Information.</a></p>
+                <p class="footer_links"><a class="fl" href="worldmeter.html">World Meter Facts.</a></p>
+                <p class="footer_links"><a class="fl" href="emergenciescontact.html">All Emergencies Contact.</a></p>
+            </div>
+            <div class="inner_footer_third">
+                <h3 class="footer_heading fh3">Social Connectivity</h3>
+                <a class="fl" href="https://twitter.com/surajt26" target="_blank"><p class="footer_links_third"><svg class="social_svg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="svg-inline--fa fa-twitter fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>Twitter</p></a>
+                <a class="fl" href="https://www.facebook.com/surajt26/" target="_blank"><p class="footer_links_third"><svg class="social_svg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook" class="svg-inline--fa fa-facebook fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg>Facebook</p></a>
+                <a class="fl" href="https://www.instagram.com/surajt26/" target="_blank"><p class="footer_links_third"><svg class="social_svg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" class="svg-inline--fa fa-instagram fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>Instagram</p></a>
+                <a class="fl" href="https://www.linkedin.com/in/surajt26/" target="_blank"><p class="footer_links_third"><svg class="social_svg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin-in" class="svg-inline--fa fa-linkedin-in fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>Linkedin</p></a>
+            </div>
+            <div class="line">
+                <p class="bottom_details">&#169 2020 My Website. All rights reserved | Designed and Developed by Suraj KY</p>
+            </div>
+        </footer>
+
+        <script>
+            $(document).ready(function(){
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+            
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+            
+                // Store hash
+                var hash = this.hash;
+            
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 1000, function(){
+            
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+                } // End if
+            });
+            });
+        </script>
+
+    </body>
+</html>

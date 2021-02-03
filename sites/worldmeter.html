@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Head Start -->
+    <head>
+        <title>COVID-19 | WorldMeter</title>
+        <link rel="icon" href="image/icon.png" type="image/icon">
+        <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../css/main.css">
+        <link rel="stylesheet" type="text/css" href="../css/worldmeter.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <!-- Style Start -->
+        <style>
+            body {
+                background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../image/virus.jpg');
+                height: 100%;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+                background-position: center;   
+            }
+        </style>
+        <!-- Style End -->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    </head>
+    <!-- Head End -->
+
+    <!-- Body Start -->
+    <body>
+
+        <a href="#take_top">
+            <div class="bookmark_upper">
+                <p id="toparrow"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-up" class="svg-inline--fa fa-arrow-up fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"></path></svg></p>
+            </div>
+        </a>
+        <div class="menuCover" id="menuCover">
+            <div><p style="float:right;"><span onclick="menuHide()">X</span></p></div>
+            <div><p><a href="../index.html">Home</a></p></div>
+            <div><p><a href="newsroom.html" target="_blank">NewsRoom</a></p></div>
+            <div><p><a href="information.html">Information</a></p></div>
+            <div><p><a href="indiameter.html">IndiaMeter</a></p></div>
+            <div><p><a class="activeBar" href="worldmeter.html">WorldMeter</a></p></div>
+            <div><p><a href="emergenciescontact.html">EmergenciesContact</a></p></div>
+            <div><p><a href="contactinfo.html">ContactUs</a></p></div>
+        </div>
+
+        <header id="take_top">
+            <a class="logo" href="../index.html">Coronavirus (COVID-19)</a>
+        </header>
+
+        <div class="menuBar">
+            <span onclick="menuShow()">Menu</span>
+        </div>
+        <script>
+            function menuShow() {
+              var x = document.getElementById("menuCover");
+              if (x.style.display === "none") {
+                x.style.display = "grid";
+              } else {
+                x.style.display = "none";
+              }
+            }
+            function menuHide() {
+              var x = document.getElementById("menuCover");
+              if (x.style.display === "grid") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "grid";
+              }
+            }
+        </script>
+
+        <ul class="menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="newsroom.html" target="_blank">NewsRoom</a></li>
+            <li><a href="sites/information.html">Information</a></li>
+            <li><a href="indiameter.html">IndiaMeter</a></li>
+            <li><a class="active" href="worldmeter.html">WorldMeter</a></li>
+            <li><a href="emergenciescontact.html">EmergenciesContact</a></li>
+            <li><a href="contactinfo.html">Contact Info</a></li>
+        </ul>
+       
+        <!-- Menu bar end -->
+
+        <div class="world_section_first">
+
+            <div class="card_section">
+                <div class="card">
+                    <div class="contain">
+                        <div class="front">COVID-19 CORONAVIRUS PANDEMIC</div>
+                        <div class="back">Last updated: Jun 07, 2020, 17:22 GMT</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cases">
+
+                <div class="contains">
+                    <div class="fronts">
+                        <div class="frontsdetails">
+                            <p class="fd01">Coronavirus Cases:</p>
+                            <p class="fd02">6,915,119</p>
+                            <p class="fd03">Deaths:</p>
+                            <p class="fd04">399,938</p>
+                            <p class="fd05">Recovered:</p>
+                            <p class="fd06">3,384,826</p>
+                            <p class="fd07">The coronavirus COVID-19 is affecting 213 countries and territories around the world and 2 international conveyances. The day is reset after midnight GMT+0.</p>
+                        </div>
+                    </div>
+
+                    <div class="backs">
+                        <div class="backsdetails">
+                            <div class="bkdetails">
+                                <p class="bd01">ACTIVE CASES</p>
+                                <p class="bd02">3,130,355</p>
+                                <p class="bd03">Currently Infected Patients</p>
+                                <p class="bd04">3,076,760</p>
+                                <p class="bd05">in Mild Condition</p>
+                                <p class="bd06">53,595</p>
+                                <p class="bd07">Serious or Critical</p>
+                            </div>
+                        </div>
+                        <div class="backsdetails">
+                            <div class="bkdetails">
+                                <p class="bd08">CLOSED CASES</p>
+                                <p class="bd09">3,784,764</p>
+                                <p class="bd10">Cases which had an outcome:</p>
+                                <p class="bd11">3,384,826</p> 
+                                <p class="bd12">Recovered / Discharged</p>
+                                <p class="bd13">399,938</p>
+                                <p class="bd14">Deaths</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="world_section_second">
+
+            <div class="tabletitle">Confirmed Cases and Deaths by Country, Territory, or Conveyance</div>
+            <div class="table_div">
+                <table class="table">
+                    <tr class="heading">
+                        <th class="country_name">Country, Other</th><th class="total_cases">Total Cases</th><th class="new_cases">New Cases</th><th class="total_deaths">Total Deaths</th><th class="new_deaths">New Deaths</th><th class="total_recovered">Total Recoverd</th><th class="active_cases">Active Cases</th><th class="serious_cases">Serious, Critical</th>
+                    </tr>
+                    <tr>
+                        <td class="country_name">Afghanistan</td><td class="total_cases">19,551</td><td class="new_cases ne">+582</td><td class="total_deaths">320</td><td class="new_deaths de">+11</td><td class="total_recovered">1,820</td><td class="active_cases">17,411</td><td class="serious_cases">19</td>
+                    </tr>
+                    <tr>
+                        <td class="country_name">Albania</td><td class="total_cases">1,232</td><td class="new_cases ne">+20</td><td class="total_deaths">34</td><td class="new_deaths de">+1</td><td class="total_recovered">925</td><td class="active_cases">273</td><td class="serious_cases">5</td>
+                    </tr>
+                    <tr>
+                        <td class="country_name">Algeria</td><td class="total_cases">10,050</td><td class="new_cases ne">+115</td><td class="total_deaths">698</td><td class="new_deaths de">+8</td><td class="total_recovered">6,631</td><td class="active_cases">2,721</td><td class="serious_cases">22</td>
+                    </tr>
+                    <tr>
+                        <td class="country_name">Andorra</td><td class="total_cases">852</td><td class="new_cases"></td><td class="total_deaths">51</td><td class="new_deaths"></td><td class="total_recovered">741</td><td class="active_cases">60</td><td class="serious_cases">7</td>
+                    </tr>
+                    <tr>
+                        <td class="country_name">Angola</td><td class="total_cases">86</td><td class="new_cases"></td><td class="total_deaths">4</td><td class="new_deaths"></td><td class="total_recovered">21</td><td class="active_cases">61</td><td class="serious_cases">1</td>
+                    </tr>
+                    <tr>
+                        <td class="country_name">Anguilla</td><td class="total_cases">3</td><td class="new_cases"></td><td class="total_deaths"></td><td class="new_deaths"></td><td class="total_recovered">3</td><td class="active_cases">0</td><td class="serious_cases"></td>
+                    </tr>
+                    <tr>
+                        <td class="country_name">Antigua and Barbuda</td><td class="total_cases">26</td><td class="new_cases"></td><td class="total_deaths">3</td><td class="new_deaths"></td><td class="total_recovered">20</td><td class="active_cases">3</td><td class="serious_cases">1</td>
+                    </tr>
+                    <tr>
+                        <td class="country_name">Argentina</td><td class="total_cases">21,037</td><td class="new_cases"></td><td class="total_deaths">642</td><td class="new_deaths de">+10</td><td class="total_recovered">6,180</td><td class="active_cases">14,215</td><td class="serious_cases">274</td>
+                    </tr>
+                    <tr>
+                        <td class="country_name">Armenia</td><td class="total_cases">12,364</td><td class="new_cases ne">+547</td><td class="total_deaths">190</td><td class="new_deaths de">+7</td><td class="total_recovered">3,720</td><td class="active_cases">8,454</td><td class="serious_cases">10</td>
+                    </tr>
+                    <tr>
+                        <td class="country_name">Aruba</td><td class="total_cases">101</td><td class="new_cases"></td><td class="total_deaths">3</td><td class="new_deaths"></td><td class="total_recovered">98</td><td class="active_cases">0</td><td class="serious_cases"></td>
+                    </tr>
+                    <tr>
+                        <td class="country_name">Australia</td><td class="total_cases">7,255</td><td class="new_cases ne">4</td><td class="total_deaths">102</td><td class="new_deaths"></td><td class="total_recovered">6,690</td><td class="active_cases">463</td><td class="serious_cases">2</td>
+                    </tr>
+                    <tr>
+                        <td class="country_name">Austria</td><td class="total_cases">16,898</td><td class="new_cases ne">+55</td><td class="total_deaths">672</td><td class="new_deaths"></td><td class="total_recovered">15,789</td><td class="active_cases">437</td><td class="serious_cases">17</td>
+                    </tr>
+                    <tr>
+                        <td class="country_name">Azerbaijan</td><td class="total_cases">7,239</td><td class="new_cases ne">+379</td><td class="total_deaths">84</td><td class="new_deaths de">+2</td><td class="total_recovered">4,024</td><td class="active_cases">3,131</td><td class="serious_cases">66</td>
+                    </tr>
+                    <tr>
+                        <td class="country_name">Bahamas</td><td class="total_cases">102</td><td class="new_cases"></td><td class="total_deaths">11</td><td class="new_deaths"></td><td class="total_recovered">55</td><td class="active_cases">36</td><td class="serious_cases">2</td>
+                    </tr>
+                    <tr>
+                        <td class="country_name">Bahrain</td><td class="total_cases">14,224</td><td class="new_cases ne">+389</td><td class="total_deaths">23</td><td class="new_deaths de">+1</td><td class="total_recovered">9,020</td><td class="active_cases">5,181</td><td class="serious_cases">13</td>
+                    </tr>
+                    <tr>
+                        <td class="country_name">Bangladesh</td><td class="total_cases">63,026</td><td class="new_cases ne">+2,635</td><td class="total_deaths">846</td><td class="new_deaths de">+35</td><td class="total_recovered">13,325</td><td class="active_cases">48,855</td><td class="serious_cases">1</td>
+                    </tr>
+                    <tr>
+                        <td class="country_name">Barbados</td><td class="total_cases">92</td><td class="new_cases"></td><td class="total_deaths">7</td><td class="new_deaths"></td><td class="total_recovered">81</td><td class="active_cases">4</td><td class="serious_cases">1</td>
+                    </tr>
+                    <tr>
+                        <td class="country_name">Belarus</td><td class="total_cases">47,751</td><td class="new_cases ne">+883</td><td class="total_deaths">263</td><td class="new_deaths de">+4</td><td class="total_recovered">23,015</td><td class="active_cases">24,473</td><td class="serious_cases">92</td>
+                    </tr>
+                    <tr>
+                        <td class="country_name">Belgium</td><td class="total_cases">59,072</td><td class="new_cases ne">+165</td><td class="total_deaths">9580</td><td class="new_deaths de">+14</td><td class="total_recovered">16,190</td><td class="active_cases">33,302</td><td class="serious_cases">121</td>
+                    </tr>
+                    <tr>
+                        <td class="country_name">Belize</td><td class="total_cases">19</td><td class="new_cases"></td><td class="total_deaths">2</td><td class="new_deaths"></td><td class="total_recovered">16</td><td class="active_cases">1</td><td class="serious_cases">0</td>
+                    </tr>
+                    <tr>
+                        <td class="country_name">Benin</td><td class="total_cases">261</td><td class="new_cases"></td><td class="total_deaths">3</td><td class="new_deaths"></td><td class="total_recovered">151</td><td class="active_cases">107</td><td class="serious_cases"></td>
+                    </tr>
+                    <tr>
+                        <td class="country_name">Bermuda</td><td class="total_cases">48</td><td class="new_cases"></td><td class="total_deaths"></td><td class="new_deaths"></td><td class="total_recovered">114</td><td class="active_cases">18</td><td class="serious_cases">2</td>
+                    </tr>
+                    <tr>
+                        <td class="country_name">Bolivia</td><td class="total_cases">12,728</td><td class="new_cases ne">+483</td><td class="total_deaths">427</td><td class="new_deaths de">+12</td><td class="total_recovered">1,739</td><td class="active_cases">10,562</td><td class="serious_cases">3</td>
+                    </tr>
+                    <tr>
+                        <td class="country_name">Bosnia and Herzegovina</td><td class="total_cases">2,606</td><td class="new_cases"></td><td class="total_deaths">159</td><td class="new_deaths"></td><td class="total_recovered">1,968</td><td class="active_cases">479</td><td class="serious_cases">4</td>
+                    </tr>
+                    <tr>
+                        <td class="country_name">Botswana</td><td class="total_cases">40</td><td class="new_cases"></td><td class="total_deaths">1</td><td class="new_deaths"></td><td class="total_recovered">23</td><td class="active_cases">16</td><td class="serious_cases"></td>
+                    </tr>
+                    <tr>
+                        <td class="country_name">Brazil</td><td class="total_cases">650,504</td><td class="new_cases ne">+4,498</td><td class="total_deaths">35,139</td><td class="new_deaths de">+92</td><td class="total_recovered">302,084</td><td class="active_cases">313,281</td><td class="serious_cases">8,318</td>
+                    </tr>
+                    <tr>
+                        <td class="country_name">British Virgin</td><td class="total_cases">8</td><td class="new_cases"></td><td class="total_deaths">1</td><td class="new_deaths"></td><td class="total_recovered">7</td><td class="active_cases">0</td><td class="serious_cases"></td>
+                    </tr>
+                    <tr>
+                        <td class="country_name">Brunei</td><td class="total_cases">141</td><td class="new_cases"></td><td class="total_deaths">2</td><td class="new_deaths"></td><td class="total_recovered">138</td><td class="active_cases">1</td><td class="serious_cases">1</td>
+                    </tr>
+                    <tr>
+                        <td class="country_name">Bulgaria</td><td class="total_cases">2,668</td><td class="new_cases ne">+41</td><td class="total_deaths">160</td><td class="new_deaths de">+1</td><td class="total_recovered">1,528</td><td class="active_cases">980</td><td class="serious_cases">12</td>
+                    </tr>
+                    <tr>
+                        <td class="country_name">Burkina</td><td class="total_cases">888</td><td class="new_cases"></td><td class="total_deaths">53</td><td class="new_deaths"></td><td class="total_recovered">760</td><td class="active_cases">75</td><td class="serious_cases"></td>
+                    </tr>
+                    <tr>
+                        <td class="country_name">Burundi</td><td class="total_cases">63</td><td class="new_cases"></td><td class="total_deaths">1</td><td class="new_deaths"></td><td class="total_recovered">33</td><td class="active_cases">29</td><td class="serious_cases"></td>
+                    </tr>
+                    <tr>
+                        <td class="country_name">Cabo Verde</td><td class="total_cases">542</td><td class="new_cases ne">+6</td><td class="total_deaths">5</td><td class="new_deaths"></td><td class="total_recovered">240</td><td class="active_cases">297</td><td class="serious_cases"></td>
+                    </tr>
+                    <tr>
+                        <td class="country_name">Cambodia</td><td class="total_cases">125</td><td class="new_cases"></td><td class="total_deaths"></td><td class="new_deaths"></td><td class="total_recovered">123</td><td class="active_cases">2</td><td class="serious_cases">1</td>
+                    </tr>
+                    <tr>
+                        <td class="country_name">Cameroon</td><td class="total_cases">7,599</td><td class="new_cases ne">+207</td><td class="total_deaths">212</td><td class="new_deaths de">+7</td><td class="total_recovered">4,587</td><td class="active_cases">2,800</td><td class="serious_cases">28</td>
+                    </tr>
+                    <tr>
+                        <td class="country_name">Canada</td><td class="total_cases">95,016</td><td class="new_cases ne">+681</td><td class="total_deaths">7,773</td><td class="new_deaths de">+70</td><td class="total_recovered">53,582</td><td class="active_cases">33,661</td><td class="serious_cases">1,738</td>
+                    </tr>
+                    <tr>
+                        <td class="country_name">CAR</td><td class="total_cases">1,570</td><td class="new_cases ne">+119</td><td class="total_deaths">5</td><td class="new_deaths de">+1</td><td class="total_recovered">37</td><td class="active_cases">1,528</td><td class="serious_cases"></td>
+                    </tr>
+                    <tr>
+                        <td class="country_name">Caribbean Netherlands</td><td class="total_cases">7</td><td class="new_cases"></td><td class="total_deaths"></td><td class="new_deaths"></td><td class="total_recovered">7</td><td class="active_cases">0</td><td class="serious_cases"></td>
+                    </tr>
+                    <tr>
+                        <td class="country_name">Cayman Islands</td><td class="total_cases">164</td><td class="new_cases"></td><td class="total_deaths">1</td><td class="new_deaths"></td><td class="total_recovered">93</td><td class="active_cases">70</td><td class="serious_cases"></td>
+                    </tr>
+                    <tr>
+                        <td class="country_name">Chad</td><td class="total_cases">836</td><td class="new_cases"></td><td class="total_deaths">68</td><td class="new_deaths"></td><td class="total_recovered">657</td><td class="active_cases">111</td><td class="serious_cases"></td>
+                    </tr>
+                    <tr>
+                        <td class="country_name">Channel Islands</td><td class="total_cases">563</td><td class="new_cases ne">+2</td><td class="total_deaths">46</td><td class="new_deaths"></td><td class="total_recovered">512</td><td class="active_cases">5</td><td class="serious_cases"></td>
+                    </tr>
+                    <tr>
+                        <td class="country_name">Chile</td><td class="total_cases">127,745</td><td class="new_cases ne">+5,246</td><td class="total_deaths">1,541</td><td class="new_deaths de">+93</td><td class="total_recovered">95,631</td><td class="active_cases">30,573</td><td class="serious_cases">1,524</td>
+                    </tr>
+                    <tr>
+                        <td class="country_name">China</td><td class="total_cases">83,030</td><td class="new_cases ne">+3</td><td class="total_deaths">4,634</td><td class="new_deaths"></td><td class="total_recovered">78,329</td><td class="active_cases">67</td><td class="serious_cases">2</td>
+                    </tr>
+                    <tr>
+                        <td class="country_name">Colombia</td><td class="total_cases">36,635</td><td class="new_cases"></td><td class="total_deaths">1,145</td><td class="new_deaths"></td><td class="total_recovered">13,638</td><td class="active_cases">21,852</td><td class="serious_cases">335</td>
+                    </tr>
+                    <tr>
+                        <td class="country_name">Comoros</td><td class="total_cases">132</td><td class="new_cases"></td><td class="total_deaths">2</td><td class="new_deaths"></td><td class="total_recovered">55</td><td class="active_cases">75</td><td class="serious_cases"></td>
+                    </tr>
+                    <tr>
+                        <td class="country_name">Congo</td><td class="total_cases">635</td><td class="new_cases"></td><td class="total_deaths">20</td><td class="new_deaths"></td><td class="total_recovered">182</td><td class="active_cases">433</td><td class="serious_cases"></td>
+                    </tr>
+                    <tr>
+                        <td class="country_name">Costa Rica</td><td class="total_cases">1,228</td><td class="new_cases"></td><td class="total_deaths">10</td><td class="new_deaths"></td><td class="total_recovered">695</td><td class="active_cases">523</td><td class="serious_cases">4</td>
+                    </tr>
+                    <tr>
+                        <td class="country_name">Croatia</td><td class="total_cases">2,247</td><td class="new_cases"></td><td class="total_deaths">104</td><td class="new_deaths de">+1</td><td class="total_recovered">2,121</td><td class="active_cases">22</td><td class="serious_cases">2</td>
+                    </tr>
+                    <tr>
+                        <td class="country_name">Cuba</td><td class="total_cases">2,173</td><td class="new_cases ne">+40</td><td class="total_deaths">83</td><td class="new_deaths"></td><td class="total_recovered">1,855</td><td class="active_cases">235</td><td class="serious_cases">3</td>
+                    </tr>
+                    <tr>
+                        <td class="country_name">Curacao</td><td class="total_cases">21</td><td class="new_cases"></td><td class="total_deaths">1</td><td class="new_deaths"></td><td class="total_recovered">15</td><td class="active_cases">5</td><td class="serious_cases"></td>
+                    </tr>
+                    <tr>
+                        <td class="country_name">Cyprus</td><td class="total_cases">960</td><td class="new_cases"></td><td class="total_deaths">18</td><td class="new_deaths de">+1</td><td class="total_recovered">807</td><td class="active_cases">135</td><td class="serious_cases">4</td>
+                    </tr>
+                    <tr>
+                        <td class="country_name">Czechia</td><td class="total_cases">9,546</td><td class="new_cases ne">+17</td><td class="total_deaths">327</td><td class="new_deaths"></td><td class="total_recovered">6,884</td><td class="active_cases">2,335</td><td class="serious_cases">12</td>
+                    </tr>
+                    <tr>
+                        <td class="country_name">Denmark</td><td class="total_cases">11,924</td><td class="new_cases ne">+49</td><td class="total_deaths">587</td><td class="new_deaths de">+1</td><td class="total_recovered">10,721</td><td class="active_cases">616</td><td class="serious_cases">15</td>
+                    </tr>
+                    <tr>
+                        <td class="country_name">Diamond Princess</td><td class="total_cases">712</td><td class="new_cases"></td><td class="total_deaths">13</td><td class="new_deaths"></td><td class="total_recovered">651</td><td class="active_cases">48</td><td class="serious_cases">4</td>
+                    </tr>
+                    <tr>
+                        <td class="country_name">Djibouti</td><td class="total_cases">4,169</td><td class="new_cases ne">+46</td><td class="total_deaths">26</td><td class="new_deaths"></td><td class="total_recovered">1,815</td><td class="active_cases">2,328</td><td class="serious_cases"></td>
+                    </tr>
+                    <tr>
+                        <td class="country_name">Dominica</td><td class="total_cases">18</td><td class="new_cases"></td><td class="total_deaths"></td><td class="new_deaths"></td><td class="total_recovered">16</td><td class="active_cases">2</td><td class="serious_cases"></td>
+                    </tr>
+                    <tr>
+                        <td class="country_name">Dominican Republic</td><td class="total_cases">19,195</td><td class="new_cases ne">+487</td><td class="total_deaths">536</td><td class="new_deaths de">+11</td><td class="total_recovered">11,919</td><td class="active_cases">6,740</td><td class="serious_cases">110</td>
+                    </tr>
+                    <tr>
+                        <td class="country_name">DRC</td><td class="total_cases">3,878</td><td class="new_cases ne">+114</td><td class="total_deaths">82</td><td class="new_deaths de">+1</td><td class="total_recovered">537</td><td class="active_cases">3,259</td><td class="serious_cases"></td>
+                    </tr>
+                    <tr>
+                        <td class="country_name">Ecuador</td><td class="total_cases">41,575</td><td class="new_cases"></td><td class="total_deaths">3,534</td><td class="new_deaths"></td><td class="total_recovered">20,568</td><td class="active_cases">17,473</td><td class="serious_cases">252</td>
+                    </tr>
+                    <tr>
+                        <td class="country_name">Egypt</td><td class="total_cases">31,115</td><td class="new_cases"></td><td class="total_deaths">1,166</td><td class="new_deaths"></td><td class="total_recovered">8,158</td><td class="active_cases">21,791</td><td class="serious_cases">41</td>
+                    </tr>
+                    <tr>
+                        <td class="country_name">EI Salvador</td><td class="total_cases">2,934</td><td class="new_cases ne">+85</td><td class="total_deaths">53</td><td class="new_deaths"></td><td class="total_recovered">1,281</td><td class="active_cases">1,600</td><td class="serious_cases">58</td>
+                    </tr>
+                    <tr>
+                        <td class="country_name">Equatorial Guinea</td><td class="total_cases">1,306</td><td class="new_cases"></td><td class="total_deaths">12</td><td class="new_deaths"></td><td class="total_recovered">200</td><td class="active_cases">1,094</td><td class="serious_cases"></td>
+                    </tr>
+                    <tr>
+                        <td class="country_name">Eritrea</td><td class="total_cases">39</td><td class="new_cases"></td><td class="total_deaths"></td><td class="new_deaths"></td><td class="total_recovered">39</td><td class="active_cases">0</td><td class="serious_cases"></td>
+                    </tr>
+                    <tr>
+                        <td class="country_name">Estonia</td><td class="total_cases">1,931</td><td class="new_cases ne">+21</td><td class="total_deaths">69</td><td class="new_deaths"></td><td class="total_recovered">1,675</td><td class="active_cases">187</td><td class="serious_cases"></td>
+                    </tr>
+                    <tr>
+                        <td class="country_name">Eswatini</td><td class="total_cases">305</td><td class="new_cases"></td><td class="total_deaths">3</td><td class="new_deaths"></td><td class="total_recovered">221</td><td class="active_cases">81</td><td class="serious_cases">5</td>
+                    </tr>
+                    <tr>
+                        <td class="country_name">Ethiopia</td><td class="total_cases">1,934</td><td class="new_cases ne">+129</td><td class="total_deaths">20</td><td class="new_deaths de">+1</td><td class="total_recovered">281</td><td class="active_cases">1,633</td><td class="serious_cases">27</td>
+                    </tr>
+                    <tr>
+                        <td class="country_name">Faeroe Islands</td><td class="total_cases">187</td><td class="new_cases"></td><td class="total_deaths"></td><td class="new_deaths"></td><td class="total_recovered">187</td><td class="active_cases">0</td><td class="serious_cases"></td>
+                    </tr>
+                    <tr>
+                        <td class="country_name">Falkland Islands</td><td class="total_cases">13</td><td class="new_cases"></td><td class="total_deaths"></td><td class="new_deaths"></td><td class="total_recovered">13</td><td class="active_cases">0</td><td class="serious_cases"></td>
+                    </tr><tr>
+                        <td class="country_name">Fiji</td><td class="total_cases">18</td><td class="new_cases"></td><td class="total_deaths"></td><td class="new_deaths"></td><td class="total_recovered">18</td><td class="active_cases">0</td><td class="serious_cases"></td>
+                    </tr><tr>
+                        <td class="country_name">Finland</td><td class="total_cases">6,964</td><td class="new_cases ne">+23</td><td class="total_deaths">322</td><td class="new_deaths"></td><td class="total_recovered">5,800</td><td class="active_cases">842</td><td class="serious_cases">7</td>
+                    </tr><tr>
+                        <td class="country_name">France</td><td class="total_cases">153,055</td><td class="new_cases"></td><td class="total_deaths">29,111</td><td class="new_deaths"></td><td class="total_recovered">70,504</td><td class="active_cases">53,440</td><td class="serious_cases">1,094</td>
+                    </tr><tr>
+                        <td class="country_name">French Guiana</td><td class="total_cases">639</td><td class="new_cases ne">+50</td><td class="total_deaths">1</td><td class="new_deaths"></td><td class="total_recovered">348</td><td class="active_cases">290</td><td class="serious_cases">1</td>
+                    </tr><tr>
+                        <td class="country_name">French Polynesia</td><td class="total_cases">60</td><td class="new_cases"></td><td class="total_deaths"></td><td class="new_deaths"></td><td class="total_recovered">60</td><td class="active_cases">0</td><td class="serious_cases"></td>
+                    </tr><tr>
+                        <td class="country_name">Gabon</td><td class="total_cases">3,101</td><td class="new_cases"></td><td class="total_deaths">21</td><td class="new_deaths"></td><td class="total_recovered">833</td><td class="active_cases">2,247</td><td class="serious_cases">13</td>
+                    </tr><tr>
+                        <td class="country_name">Gambia</td><td class="total_cases">26</td><td class="new_cases"></td><td class="total_deaths">1</td><td class="new_deaths"></td><td class="total_recovered">21</td><td class="active_cases">4</td><td class="serious_cases"></td>
+                    </tr><tr>
+                        <td class="country_name">Georgia</td><td class="total_cases">808</td><td class="new_cases ne">+3</td><td class="total_deaths">13</td><td class="new_deaths"></td><td class="total_recovered">663</td><td class="active_cases">132</td><td class="serious_cases">6</td>
+                    </tr><tr>
+                        <td class="country_name">Germany</td><td class="total_cases">185,466</td><td class="new_cases ne">+52</td><td class="total_deaths">8,766</td><td class="new_deaths de">+3</td><td class="total_recovered">168,900</td><td class="active_cases">7,800</td><td class="serious_cases">595</td>
+                    </tr><tr>
+                        <td class="country_name">Ghana</td><td class="total_cases">9,462</td><td class="new_cases ne">+294</td><td class="total_deaths">44</td><td class="new_deaths de">+2</td><td class="total_recovered">3,547</td><td class="active_cases">5,871</td><td class="serious_cases">3</td>
+                    </tr><tr>
+                        <td class="country_name">Gibraltar</td><td class="total_cases">175</td><td class="new_cases ne">+1</td><td class="total_deaths"></td><td class="new_deaths"></td><td class="total_recovered">155</td><td class="active_cases">20</td><td class="serious_cases"></td>
+                    </tr><tr>
+                        <td class="country_name">Greece</td><td class="total_cases">2,980</td><td class="new_cases ne">+13</td><td class="total_deaths">180</td><td class="new_deaths"></td><td class="total_recovered">1,374</td><td class="active_cases">1,426</td><td class="serious_cases">9</td>
+                    </tr><tr>
+                        <td class="country_name">Greenland</td><td class="total_cases">13</td><td class="new_cases "></td><td class="total_deaths"></td><td class="new_deaths"></td><td class="total_recovered">13</td><td class="active_cases">0</td><td class="serious_cases"></td>
+                    </tr><tr>
+                        <td class="country_name">Grenada</td><td class="total_cases">23</td><td class="new_cases "></td><td class="total_deaths"></td><td class="new_deaths"></td><td class="total_recovered">22</td><td class="active_cases">1</td><td class="serious_cases">2</td>
+                    </tr><tr>
+                        <td class="country_name">Guadeloupe</td><td class="total_cases">164</td><td class="new_cases "></td><td class="total_deaths">14</td><td class="new_deaths"></td><td class="total_recovered">144</td><td class="active_cases">6</td><td class="serious_cases">1</td>
+                    </tr>
+                    <tr><td class="country_name">Guatemala</td><td class="total_cases">6,485</td><td class="new_cases ne">+331</td><td class="total_deaths">216</td><td class="new_deaths de">+58</td><td class="total_recovered">1,053</td><td class="active_cases">5,216</td><td class="serious_cases">5</td></tr>
+                    <tr><td class="country_name">Guinea</td><td class="total_cases">4,060</td><td class="new_cases"></td><td class="total_deaths">23</td><td class="new_deaths"></td><td class="total_recovered">2,667</td><td class="active_cases">1,370</td><td class="serious_cases">24</td></tr>
+                    <tr><td class="country_name">Guinea-Bissau</td><td class="total_cases">1,368</td><td class="new_cases"></td><td class="total_deaths">12</td><td class="new_deaths"></td><td class="total_recovered">153</td><td class="active_cases">1,203</td><td class="serious_cases"></td></tr>
+                    <tr><td class="country_name">Guyana</td><td class="total_cases">153</td><td class="new_cases"></td><td class="total_deaths">12</td><td class="new_deaths"></td><td class="total_recovered">77</td><td class="active_cases">64</td><td class="serious_cases">3</td></tr>
+                    <tr><td class="country_name">Haiti</td><td class="total_cases">2,924</td><td class="new_cases ne">+184</td><td class="total_deaths">50</td><td class="new_deaths"></td><td class="total_recovered">24</td><td class="active_cases">2,850</td><td class="serious_cases"></td></tr>
+                    <tr><td class="country_name">Honduras</td><td class="total_cases">5,971</td><td class="new_cases ne">+91</td><td class="total_deaths">248</td><td class="new_deaths de">+5</td><td class="total_recovered">677</td><td class="active_cases">5,046</td><td class="serious_cases">13</td></tr>
+                    <tr><td class="country_name">Hong Kong</td><td class="total_cases">1,106</td><td class="new_cases ne">+3</td><td class="total_deaths">4</td><td class="new_deaths"></td><td class="total_recovered">1,048</td><td class="active_cases">54</td><td class="serious_cases">2</td></tr>
+                    <tr><td class="country_name">Hungary</td><td class="total_cases">3,990</td><td class="new_cases ne">+20</td><td class="total_deaths">545</td><td class="new_deaths de">+3</td><td class="total_recovered">2,279</td><td class="active_cases">1,166</td><td class="serious_cases">21</td></tr>
+                    <tr><td class="country_name">Iceland</td><td class="total_cases">1,806</td><td class="new_cases"></td><td class="total_deaths">10</td><td class="new_deathse"></td><td class="total_recovered">TR</td><td class="active_cases">2</td><td class="serious_cases"></td></tr>
+                    <tr><td class="country_name">India</td><td class="total_cases">245,962</td><td class="new_cases ne">+9,778</td><td class="total_deaths">6,933</td><td class="new_deaths de">+284</td><td class="total_recovered">1,794</td><td class="active_cases">120,716</td><td class="serious_cases">8,944</td></tr>
+                    <tr><td class="country_name">Indonesia</td><td class="total_cases">30,514</td><td class="new_cases ne">+993</td><td class="total_deaths">1,801</td><td class="new_deaths de">+31</td><td class="total_recovered">118,313</td><td class="active_cases">18,806</td><td class="serious_cases"></td></tr>
+                    <tr><td class="country_name">Iran</td><td class="total_cases">169,425</td><td class="new_cases ne">+2,269</td><td class="total_deaths">8,209</td><td class="new_deaths de">+75</td><td class="total_recovered">9,907</td><td class="active_cases">29,178</td><td class="serious_cases">2,578</td></tr>
+                    <tr><td class="country_name">Iraq</td><td class="total_cases">11,098</td><td class="new_cases ne">+1,252</td><td class="total_deaths">318</td><td class="new_deaths de">+33</td><td class="total_recovered">132,038</td><td class="active_cases">5,876</td><td class="serious_cases">60</td></tr>
+                    <tr><td class="country_name">Irelan</td><td class="total_cases">25,183</td><td class="new_cases ne">+20</td><td class="total_deaths">1,678</td><td class="new_deaths de">+8</td><td class="total_recovered">4,904</td><td class="active_cases">807</td><td class="serious_cases">36</td></tr>
+                    <tr><td class="country_name">Isle of Man</td><td class="total_cases">336</td><td class="new_cases"></td><td class="total_deaths">24</td><td class="new_deaths"></td><td class="total_recovered">22,698</td><td class="active_cases"></td><td class="serious_cases"></td></tr>
+                    <tr><td class="country_name">Israel</td><td class="total_cases">17,706</td><td class="new_cases ne">+144</td><td class="total_deaths">292</td><td class="new_deaths de">+1</td><td class="total_recovered">312</td><td class="active_cases">2,372</td><td class="serious_cases">29</td></tr>
+                    <tr><td class="country_name">Italy</td><td class="total_cases">234,801</td><td class="new_cases ne">+270</td><td class="total_deaths">33,846</td><td class="new_deaths de">+72</td><td class="total_recovered">15,042</td><td class="active_cases">35,877</td><td class="serious_cases">293</td></tr>
+                    <tr><td class="country_name">Ivory Coast</td><td class="total_cases">3,431</td><td class="new_cases"></td><td class="total_deaths">36</td><td class="new_deaths"></td><td class="total_recovered">1,604</td><td class="active_cases">1,791</td><td class="serious_cases"></td></tr>
+                    <tr><td class="country_name">Jamaica</td><td class="total_cases">595</td><td class="new_cases ne">+4</td><td class="total_deaths">10</td><td class="new_deaths"></td><td class="total_recovered">385</td><td class="active_cases">200</td><td class="serious_cases">2</td></tr>
+                    <tr><td class="country_name">Japan</td><td class="total_cases">17,064</td><td class="new_cases"></td><td class="total_deaths">907</td><td class="new_deaths"></td><td class="total_recovered">14,972</td><td class="active_cases">1,185</td><td class="serious_cases">98</td></tr>
+                    <tr><td class="country_name">Jordan</td><td class="total_cases">795</td><td class="new_cases ne">+11</td><td class="total_deaths">9</td><td class="new_deaths"></td><td class="total_recovered">586</td><td class="active_cases">200</td><td class="serious_cases">5</td></tr>
+                    <tr><td class="country_name">Kazakhstan</td><td class="total_cases">12,511</td><td class="new_cases ne">+199</td><td class="total_deaths">53</td><td class="new_deaths de">+1</td><td class="total_recovered">7,135</td><td class="active_cases">5,323</td><td class="serious_cases">62</td></tr>
+                    <tr><td class="country_name">Kenya</td><td class="total_cases">2,600</td><td class="new_cases ne">+126</td><td class="total_deaths">83</td><td class="new_deaths de">+4</td><td class="total_recovered">643</td><td class="active_cases">1,874</td><td class="serious_cases">7</td></tr>
+                    <tr><td class="country_name">Kuwait</td><td class="total_cases">31,131</td><td class="new_cases ne">+487</td><td class="total_deaths">254</td><td class="new_deaths de">+10</td><td class="total_recovered">19,282</td><td class="active_cases">11,595</td><td class="serious_cases">180</td></tr>
+                    <tr><td class="country_name">Kyrgyzstan</td><td class="total_cases">1,974</td><td class="new_cases ne">+38</td><td class="total_deaths">22</td><td class="new_deaths"></td><td class="total_recovered">1,360</td><td class="active_cases">592</td><td class="serious_cases">5</td></tr>
+                    <tr><td class="country_name">Laos</td><td class="total_cases">19</td><td class="new_cases"></td><td class="total_deaths"></td><td class="new_deaths"></td><td class="total_recovered">18</td><td class="active_cases">1</td><td class="serious_cases"></td></tr>
+                    <tr><td class="country_name">Latvia</td><td class="total_cases">1,086</td><td class="new_cases ne">+1</td><td class="total_deaths">25</td><td class="new_deaths"></td><td class="total_recovered">781</td><td class="active_cases">280</td><td class="serious_cases">3</td></tr>
+                    <tr><td class="country_name">Lebanon</td><td class="total_cases">1,320</td><td class="new_cases ne">+8</td><td class="total_deaths">29</td><td class="new_deaths de">+1</td><td class="total_recovered">768</td><td class="active_cases">523</td><td class="serious_cases">4</td></tr>
+                    <tr><td class="country_name">Lesotho</td><td class="total_cases">4</td><td class="new_cases"></td><td class="total_deaths"></td><td class="new_deaths"></td><td class="total_recovered">2</td><td class="active_cases">2</td><td class="serious_cases"></td></tr>
+                    <tr><td class="country_name">Liberia</td><td class="total_cases">345</td><td class="new_cases ne">+11</td><td class="total_deaths">30</td><td class="new_deaths"></td><td class="total_recovered">185</td><td class="active_cases">130</td><td class="serious_cases"></td></tr>
+                    <tr><td class="country_name">Libya</td><td class="total_cases">239</td><td class="new_cases"></td><td class="total_deaths">5</td><td class="new_deaths"></td><td class="total_recovered">52</td><td class="active_cases">182</td><td class="serious_cases"></td></tr>
+                    <tr><td class="country_name">Liechtenstein</td><td class="total_cases">82</td><td class="new_cases"></td><td class="total_deaths">1</td><td class="new_deaths"></td><td class="total_recovered">55</td><td class="active_cases">26</td><td class="serious_cases"></td></tr>
+                    <tr><td class="country_name">Lithuania</td><td class="total_cases">1,705</td><td class="new_cases ne">+11</td><td class="total_deaths">71</td><td class="new_deaths"></td><td class="total_recovered">1,321</td><td class="active_cases">313</td><td class="serious_cases">17</td></tr>
+                    <tr><td class="country_name">Luxembourg</td><td class="total_cases">4,035</td><td class="new_cases ne">+3</td><td class="total_deaths">110</td><td class="new_deaths"></td><td class="total_recovered">3,888</td><td class="active_cases">37</td><td class="serious_cases">1</td></tr>
+                    <tr><td class="country_name">Maccao</td><td class="total_cases">45</td><td class="new_cases"></td><td class="total_deaths"></td><td class="new_deaths"></td><td class="total_recovered">45</td><td class="active_cases"></td><td class="serious_cases"></td></tr>
+                    <tr><td class="country_name">Madagascar</td><td class="total_cases">1,026</td><td class="new_cases ne">+51</td><td class="total_deaths">8</td><td class="new_deaths de">+1</td><td class="total_recovered">212</td><td class="active_cases">806</td><td class="serious_cases">8</td></tr>
+                    <tr><td class="country_name">Malawi</td><td class="total_cases">409</td><td class="new_cases"></td><td class="total_deaths">4</td><td class="new_deaths "></td><td class="total_recovered">55</td><td class="active_cases">350</td><td class="serious_cases">3</td></tr>
+                    <tr><td class="country_name">Malaysia</td><td class="total_cases">8,303</td><td class="new_cases ne">+37</td><td class="total_deaths">117</td><td class="new_deaths de">+1</td><td class="total_recovered">6,635</td><td class="active_cases">1,551</td><td class="serious_cases">5</td></tr>
+                    <tr><td class="country_name">Maldives</td><td class="total_cases">1,901</td><td class="new_cases ne">+18</td><td class="total_deaths">8</td><td class="new_deaths de">+1</td><td class="total_recovered">763</td><td class="active_cases">1,130</td><td class="serious_cases">9</td></tr>
+                    <tr><td class="country_name">Mali</td><td class="total_cases">1,523</td><td class="new_cases ne">+38</td><td class="total_deaths">90</td><td class="new_deaths de">+3</td><td class="total_recovered">845</td><td class="active_cases">588</td><td class="serious_cases"></td></tr>
+                    <tr><td class="country_name">Malta</td><td class="total_cases">627</td><td class="new_cases ne">+2</td><td class="total_deaths">9</td><td class="new_deaths"></td><td class="total_recovered">596</td><td class="active_cases">22</td><td class="serious_cases"></td></tr>
+                    <tr><td class="country_name">Martinique</td><td class="total_cases">202</td><td class="new_cases"></td><td class="total_deaths">14</td><td class="new_deaths"></td><td class="total_recovered">98</td><td class="active_cases">90</td><td class="serious_cases"></td></tr>
+                    <tr><td class="country_name">Mauritania</td><td class="total_cases">883</td><td class="new_cases"></td><td class="total_deaths">43</td><td class="new_deaths"></td><td class="total_recovered">69</td><td class="active_cases">771</td><td class="serious_cases"></td></tr>
+                    <tr><td class="country_name">Mauritius</td><td class="total_cases">337</td><td class="new_cases"></td><td class="total_deaths">10</td><td class="new_deaths"></td><td class="total_recovered">324</td><td class="active_cases">3</td><td class="serious_cases"></td></tr>
+                    <tr><td class="country_name">Mayotte</td><td class="total_cases">2,079</td><td class="new_cases"></td><td class="total_deaths">25</td><td class="new_deaths"></td><td class="total_recovered">1,523</td><td class="active_cases">531</td><td class="serious_cases">12</td></tr>
+                    <tr><td class="country_name">Mexico</td><td class="total_cases">110,026</td><td class="new_cases ne">+4,346</td><td class="total_deaths">13,170</td><td class="new_deaths de">+625</td><td class="total_recovered">78,590</td><td class="active_cases">18,266</td><td class="serious_cases">378</td></tr>
+                    <tr><td class="country_name">Moldova</td><td class="total_cases">9,511</td><td class="new_cases ne">+264</td><td class="total_deaths">331</td><td class="new_deaths de">+8</td><td class="total_recovered">5,450</td><td class="active_cases">3,730</td><td class="serious_cases">306</td></tr>
+                    <tr><td class="country_name">Monaco</td><td class="total_cases">99</td><td class="new_cases"></td><td class="total_deaths">4</td><td class="new_deaths "></td><td class="total_recovered">93</td><td class="active_cases">2</td><td class="serious_cases">1</td></tr>
+                    <tr><td class="country_name">Mongolia</td><td class="total_cases">193</td><td class="new_cases ne">+2</td><td class="total_deaths"></td><td class="new_deaths "></td><td class="total_recovered">71</td><td class="active_cases">122</td><td class="serious_cases">14</td></tr>
+                    <tr><td class="country_name">Montenegro</td><td class="total_cases">324</td><td class="new_cases"></td><td class="total_deaths">9</td><td class="new_deaths "></td><td class="total_recovered">315</td><td class="active_cases">0</td><td class="serious_cases"></td></tr>
+                    <tr><td class="country_name">Montserrat</td><td class="total_cases">11</td><td class="new_cases"></td><td class="total_deaths">1</td><td class="new_deaths "></td><td class="total_recovered">10</td><td class="active_cases">0</td><td class="serious_cases"></td></tr>
+                    <tr><td class="country_name">Morocco</td><td class="total_cases">8,151</td><td class="new_cases ne">+80</td><td class="total_deaths">208</td><td class="new_deaths"></td><td class="total_recovered">7,315</td><td class="active_cases">628</td><td class="serious_cases">15</td></tr>
+                    <tr><td class="country_name">Mozambique</td><td class="total_cases">409</td><td class="new_cases ne">+55</td><td class="total_deaths">2</td><td class="new_deaths "></td><td class="total_recovered">126</td><td class="active_cases">281</td><td class="serious_cases"></td></tr>
+                    <tr><td class="country_name">MS Zaandam</td><td class="total_cases">9</td><td class="new_cases"></td><td class="total_deaths">2</td><td class="new_deaths "></td><td class="total_recovered"></td><td class="active_cases">7</td><td class="serious_cases"></td></tr>
+                    <tr><td class="country_name">Myanmar</td><td class="total_cases">240</td><td class="new_cases ne">+4</td><td class="total_deaths">6</td><td class="new_deaths "></td><td class="total_recovered">156</td><td class="active_cases">78</td><td class="serious_cases"></td></tr>
+                    <tr><td class="country_name">Namibia</td><td class="total_cases">29</td><td class="new_cases ne">+4</td><td class="total_deaths"></td><td class="new_deaths "></td><td class="total_recovered">16</td><td class="active_cases">13</td><td class="serious_cases"></td></tr>
+                    <tr><td class="country_name">Nepal</td><td class="total_cases">3,235</td><td class="new_cases ne">+323</td><td class="total_deaths">13</td><td class="new_deaths de">+2</td><td class="total_recovered">365</td><td class="active_cases">2,857</td><td class="serious_cases"></td></tr>
+                    <tr><td class="country_name">Netherlands</td><td class="total_cases">47,335</td><td class="new_cases ne">+183</td><td class="total_deaths">6,011</td><td class="new_deaths de">+6</td><td class="total_recovered"></td><td class="active_cases"></td><td class="serious_cases">97</td></tr>
+                    <tr><td class="country_name">New Caledonia</td><td class="total_cases">20</td><td class="new_cases "></td><td class="total_deaths"></td><td class="new_deaths "></td><td class="total_recovered">18</td><td class="active_cases">2</td><td class="serious_cases"></td></tr>
+                    <tr><td class="country_name">New Zealand</td><td class="total_cases">1,504</td><td class="new_cases "></td><td class="total_deaths">22</td><td class="new_deaths "></td><td class="total_recovered">1,481</td><td class="active_cases">1</td><td class="serious_cases"></td></tr>
+                    <tr><td class="country_name">Nicaragua</td><td class="total_cases">1,118</td><td class="new_cases "></td><td class="total_deaths">46</td><td class="new_deaths "></td><td class="total_recovered">370</td><td class="active_cases">702</td><td class="serious_cases"></td></tr>
+                    <tr><td class="country_name">Niger</td><td class="total_cases">966</td><td class="new_cases "></td><td class="total_deaths">65</td><td class="new_deaths "></td><td class="total_recovered">863</td><td class="active_cases">38</td><td class="serious_cases"></td></tr>
+                    <tr><td class="country_name">Nigeria</td><td class="total_cases">11,844</td><td class="new_cases "></td><td class="total_deaths">333</td><td class="new_deaths "></td><td class="total_recovered">3,696</td><td class="active_cases">7,815</td><td class="serious_cases">7</td></tr>
+                    <tr><td class="country_name">North Macedonia</td><td class="total_cases">2,915</td><td class="new_cases ne">+125</td><td class="total_deaths">151</td><td class="new_deaths de">+2</td><td class="total_recovered">1,640</td><td class="active_cases">1,124</td><td class="serious_cases">34</td></tr>
+                    <tr><td class="country_name">Norway</td><td class="total_cases">8,531</td><td class="new_cases ne">+9</td><td class="total_deaths">238</td><td class="new_deaths "></td><td class="total_recovered">8,138</td><td class="active_cases">155</td><td class="serious_cases">5</td></tr>
+                    <tr><td class="country_name">Oman</td><td class="total_cases">16,016</td><td class="new_cases ne">+930</td><td class="total_deaths">72</td><td class="new_deaths "></td><td class="total_recovered">3,451</td><td class="active_cases">12,493</td><td class="serious_cases">67</td></tr>
+                    <tr><td class="country_name">Pakistan</td><td class="total_cases">93,983</td><td class="new_cases ne">+4,734</td><td class="total_deaths">1,935</td><td class="new_deaths ">+97</td><td class="total_recovered">32,581</td><td class="active_cases">59,467</td><td class="serious_cases">111</td></tr>
+                    <tr><td class="country_name">Palestine</td><td class="total_cases">464</td><td class="new_cases "></td><td class="total_deaths">3</td><td class="new_deaths "></td><td class="total_recovered">400</td><td class="active_cases">61</td><td class="serious_cases"></td></tr>
+                    <tr><td class="country_name">Panama</td><td class="total_cases">15,463</td><td class="new_cases "></td><td class="total_deaths">370</td><td class="new_deaths "></td><td class="total_recovered">9,719</td><td class="active_cases">5,374</td><td class="serious_cases">77</td></tr>
+                    <tr><td class="country_name">Papua New Guinea</td><td class="total_cases">8</td><td class="new_cases "></td><td class="total_deaths"></td><td class="new_deaths "></td><td class="total_recovered">8</td><td class="active_cases">0</td><td class="serious_cases"></td></tr>
+                    <tr><td class="country_name">Paraguay</td><td class="total_cases">1,087</td><td class="new_cases "></td><td class="total_deaths">11</td><td class="new_deaths "></td><td class="total_recovered">516</td><td class="active_cases">560</td><td class="serious_cases">2</td></tr>
+                    <tr><td class="country_name">Peru</td><td class="total_cases">187,400</td><td class="new_cases "></td><td class="total_deaths">5,162</td><td class="new_deaths "></td><td class="total_recovered">79,214</td><td class="active_cases">103,024</td><td class="serious_cases">1,041</td></tr>
+                    <tr><td class="country_name">Philippines</td><td class="total_cases">21,340</td><td class="new_cases ne">+714</td><td class="total_deaths">994</td><td class="new_deaths de">+7</td><td class="total_recovered">4,441</td><td class="active_cases">15,905</td><td class="serious_cases">82</td></tr>
+                    <tr><td class="country_name">Poland</td><td class="total_cases">25,986</td><td class="new_cases ne">+576</td><td class="total_deaths">1,153</td><td class="new_deaths de">+16</td><td class="total_recovered">12,641</td><td class="active_cases">12,192</td><td class="serious_cases">160</td></tr>
+                    <tr><td class="country_name">Portugai</td><td class="total_cases">33,969</td><td class="new_cases "></td><td class="total_deaths">1,465</td><td class="new_deaths "></td><td class="total_recovered">20,526</td><td class="active_cases">11,978</td><td class="serious_cases">58</td></tr>
+                    <tr><td class="country_name">Qatar</td><td class="total_cases">67,195</td><td class="new_cases ne">+1,700</td><td class="total_deaths">51</td><td class="new_deaths de">+2</td><td class="total_recovered">42,527</td><td class="active_cases">24,617</td><td class="serious_cases">238</td></tr>
+                    <tr><td class="country_name">Romania</td><td class="total_cases">20,290</td><td class="new_cases ne">+187</td><td class="total_deaths">1,318</td><td class="new_deaths de">+2</td><td class="total_recovered">14,419</td><td class="active_cases">4,553</td><td class="serious_cases">153</td></tr>
+                    <tr><td class="country_name">Russia</td><td class="total_cases">458,689</td><td class="new_cases ne">+8,855</td><td class="total_deaths">5,725</td><td class="new_deaths de">+197</td><td class="total_recovered">221,388</td><td class="active_cases">231,576</td><td class="serious_cases">2,300</td></tr>
+                    <tr><td class="country_name">Rwanda</td><td class="total_cases">420</td><td class="new_cases "></td><td class="total_deaths">2</td><td class="new_deaths "></td><td class="total_recovered">282</td><td class="active_cases">136</td><td class="serious_cases"></td></tr>
+                    <tr><td class="country_name">Reunion</td><td class="total_cases">480</td><td class="new_cases "></td><td class="total_deaths">1</td><td class="new_deaths "></td><td class="total_recovered">411</td><td class="active_cases">68</td><td class="serious_cases">4</td></tr>
+                    <tr><td class="country_name">S. Korea</td><td class="total_cases">11,719</td><td class="new_cases ne">+51</td><td class="total_deaths">273</td><td class="new_deaths "></td><td class="total_recovered">10,531</td><td class="active_cases">915</td><td class="serious_cases">15</td></tr>
+                    <tr><td class="country_name">Saint Kitts and Nevis</td><td class="total_cases">15</td><td class="new_cases "></td><td class="total_deaths"></td><td class="new_deaths "></td><td class="total_recovered">15</td><td class="active_cases">0</td><td class="serious_cases"></td></tr>
+                    <tr><td class="country_name">Saint Lucia</td><td class="total_cases">19</td><td class="new_cases "></td><td class="total_deaths"></td><td class="new_deaths "></td><td class="total_recovered">18</td><td class="active_cases">1</td><td class="serious_cases"></td></tr>
+                    <tr><td class="country_name">Saint Martin</td><td class="total_cases">41</td><td class="new_cases "></td><td class="total_deaths">3</td><td class="new_deaths "></td><td class="total_recovered">33</td><td class="active_cases">5</td><td class="serious_cases">1</td></tr>
+                    <tr><td class="country_name">Saint Pierre Miquelon</td><td class="total_cases">1</td><td class="new_cases "></td><td class="total_deaths"></td><td class="new_deaths "></td><td class="total_recovered">1</td><td class="active_cases">0</td><td class="serious_cases"></td></tr>
+                    <tr><td class="country_name">San Marino</td><td class="total_cases">680</td><td class="new_cases "></td><td class="total_deaths">42</td><td class="new_deaths "></td><td class="total_recovered">428</td><td class="active_cases">210</td><td class="serious_cases">1</td></tr>
+                    <tr><td class="country_name">Sao Tome and Principe</td><td class="total_cases">499</td><td class="new_cases "></td><td class="total_deaths">12</td><td class="new_deaths "></td><td class="total_recovered">68</td><td class="active_cases">419</td><td class="serious_cases"></td></tr>
+                    <tr><td class="country_name">Saudi Arabia</td><td class="total_cases">98,869</td><td class="new_cases ne">+3,121</td><td class="total_deaths">676</td><td class="new_deaths de">+34</td><td class="total_recovered">71,791</td><td class="active_cases">26,402</td><td class="serious_cases">1,484</td></tr>
+                    <tr><td class="country_name">Senegal</td><td class="total_cases">4,249</td><td class="new_cases ne">+94</td><td class="total_deaths">47</td><td class="new_deaths de">+2</td><td class="total_recovered">2,512</td><td class="active_cases">1,690</td><td class="serious_cases">15</td></tr>
+                    <tr><td class="country_name">Serbia</td><td class="total_cases">11,741</td><td class="new_cases ne">+74</td><td class="total_deaths">248</td><td class="new_deaths de">+1</td><td class="total_recovered">11,056</td><td class="active_cases">437</td><td class="serious_cases">14</td></tr>
+                    <tr><td class="country_name">Seychelles</td><td class="total_cases">11</td><td class="new_cases "></td><td class="total_deaths"></td><td class="new_deaths "></td><td class="total_recovered">11</td><td class="active_cases">0</td><td class="serious_cases"></td></tr>
+                    <tr><td class="country_name">Sierra Leone</td><td class="total_cases">946</td><td class="new_cases ne">+17</td><td class="total_deaths">48</td><td class="new_deaths de">+1</td><td class="total_recovered">600</td><td class="active_cases">298</td><td class="serious_cases"></td></tr>
+                    <tr><td class="country_name">Singapore</td><td class="total_cases">37,527</td><td class="new_cases ne">+344</td><td class="total_deaths">25</td><td class="new_deaths de">+1</td><td class="total_recovered">24,559</td><td class="active_cases">12,943</td><td class="serious_cases">4</td></tr>
+                    <tr><td class="country_name">Sint Maarten</td><td class="total_cases">77</td><td class="new_cases "></td><td class="total_deaths">15</td><td class="new_deaths "></td><td class="total_recovered">61</td><td class="active_cases">1</td><td class="serious_cases">1</td></tr>
+                    <tr><td class="country_name">Slovakia</td><td class="total_cases">1,528</td><td class="new_cases ne">+2</td><td class="total_deaths">28</td><td class="new_deaths "></td><td class="total_recovered">1,379</td><td class="active_cases">121</td><td class="serious_cases"></td></tr>
+                    <tr><td class="country_name">Slovenia</td><td class="total_cases">1,484</td><td class="new_cases ne">+5</td><td class="total_deaths">109</td><td class="new_deaths "></td><td class="total_recovered">1,359</td><td class="active_cases">16</td><td class="serious_cases"></td></tr>
+                    <tr><td class="country_name">Somalia</td><td class="total_cases">2,289</td><td class="new_cases ne">+85</td><td class="total_deaths">82</td><td class="new_deaths de">+3</td><td class="total_recovered">431</td><td class="active_cases">1,776</td><td class="serious_cases">2</td></tr>
+                    <tr><td class="country_name">South Africa</td><td class="total_cases">43,434</td><td class="new_cases "></td><td class="total_deaths">908</td><td class="new_deaths "></td><td class="total_recovered">23,088</td><td class="active_cases">19,438</td><td class="serious_cases">208</td></tr>
+                    <tr><td class="country_name">South Sudan</td><td class="total_cases">994</td><td class="new_cases "></td><td class="total_deaths">10</td><td class="new_deaths "></td><td class="total_recovered">6</td><td class="active_cases">978</td><td class="serious_cases"></td></tr>
+                    <tr><td class="country_name">Spain</td><td class="total_cases">288,390</td><td class="new_cases ne">+332</td><td class="total_deaths">27,135</td><td class="new_deaths de">+1</td><td class="total_recovered"></td><td class="active_cases"></td><td class="serious_cases">617</td></tr>
+                    <tr><td class="country_name">Sri Lanka</td><td class="total_cases">1,814</td><td class="new_cases ne">+13</td><td class="total_deaths">11</td><td class="new_deaths "></td><td class="total_recovered">891</td><td class="active_cases">912</td><td class="serious_cases">1</td></tr>
+                    <tr><td class="country_name">St. Barth</td><td class="total_cases">6</td><td class="new_cases "></td><td class="total_deaths"></td><td class="new_deaths "></td><td class="total_recovered">6</td><td class="active_cases">0</td><td class="serious_cases"></td></tr>
+                    <tr><td class="country_name">St. Vincent Grenadines</td><td class="total_cases">26</td><td class="new_cases "></td><td class="total_deaths"></td><td class="new_deaths "></td><td class="total_recovered">15</td><td class="active_cases">11</td><td class="serious_cases"></td></tr>
+                    <tr><td class="country_name">Sudan</td><td class="total_cases">5,865</td><td class="new_cases "></td><td class="total_deaths">347</td><td class="new_deaths "></td><td class="total_recovered">1,924</td><td class="active_cases">3,594</td><td class="serious_cases"></td></tr>
+                    <tr><td class="country_name">Suriname</td><td class="total_cases">91</td><td class="new_cases ne">+1</td><td class="total_deaths">1</td><td class="new_deaths "></td><td class="total_recovered">9</td><td class="active_cases">81</td><td class="serious_cases"></td></tr>
+                    <tr><td class="country_name">Sweden</td><td class="total_cases">43,887</td><td class="new_cases ne">+114</td><td class="total_deaths">4,656</td><td class="new_deaths de">+17</td><td class="total_recovered"></td><td class="active_cases"></td><td class="serious_cases">198</td></tr>
+                    <tr><td class="country_name">Switzerland</td><td class="total_cases">30,956</td><td class="new_cases ne">+20</td><td class="total_deaths">1,921</td><td class="new_deaths "></td><td class="total_recovered">28,600</td><td class="active_cases">435</td><td class="serious_cases">28</td></tr>
+                    <tr><td class="country_name">Syria</td><td class="total_cases">124</td><td class="new_cases "></td><td class="total_deaths">6</td><td class="new_deaths "></td><td class="total_recovered">53</td><td class="active_cases">65</td><td class="serious_cases"></td></tr>
+                    <tr><td class="country_name">Taiwan</td><td class="total_cases">443</td><td class="new_cases "></td><td class="total_deaths">7</td><td class="new_deaths "></td><td class="total_recovered">429</td><td class="active_cases">7</td><td class="serious_cases"></td></tr>
+                    <tr><td class="country_name">Tajikistan</td><td class="total_cases">4,370</td><td class="new_cases "></td><td class="total_deaths">48</td><td class="new_deaths "></td><td class="total_recovered">2,491</td><td class="active_cases">1,831</td><td class="serious_cases"></td></tr>
+                    <tr><td class="country_name">Tanzania</td><td class="total_cases">509</td><td class="new_cases "></td><td class="total_deaths">21</td><td class="new_deaths "></td><td class="total_recovered">183</td><td class="active_cases">305</td><td class="serious_cases">7</td></tr>
+                    <tr><td class="country_name">Thailand</td><td class="total_cases">3,104</td><td class="new_cases ne">+2</td><td class="total_deaths">58</td><td class="new_deaths "></td><td class="total_recovered">2,971</td><td class="active_cases">75</td><td class="serious_cases">1</td></tr>
+                    <tr><td class="country_name">Timor-Leste</td><td class="total_cases">24</td><td class="new_cases "></td><td class="total_deaths"></td><td class="new_deaths "></td><td class="total_recovered">24</td><td class="active_cases"></td><td class="serious_cases"></td></tr>
+                    <tr><td class="country_name">Togo</td><td class="total_cases">485</td><td class="new_cases "></td><td class="total_deaths">13</td><td class="new_deaths "></td><td class="total_recovered">240</td><td class="active_cases">232</td><td class="serious_cases"></td></tr>
+                    <tr><td class="country_name">Trinidad and Tobago</td><td class="total_cases">117</td><td class="new_cases "></td><td class="total_deaths">8</td><td class="new_deaths "></td><td class="total_recovered">108</td><td class="active_cases">1</td><td class="serious_cases"></td></tr>
+                    <tr><td class="country_name">Tunisia</td><td class="total_cases">1,087</td><td class="new_cases "></td><td class="total_deaths">49</td><td class="new_deaths "></td><td class="total_recovered">977</td><td class="active_cases">61</td><td class="serious_cases">1</td></tr>
+                    <tr><td class="country_name">Turkey</td><td class="total_cases">168,340</td><td class="new_cases "></td><td class="total_deaths">4,648</td><td class="new_deaths "></td><td class="total_recovered">133,400</td><td class="active_cases">30,292</td><td class="serious_cases">592</td></tr>
+                    <tr><td class="country_name">Turks and Caicos</td><td class="total_cases">12</td><td class="new_cases "></td><td class="total_deaths">1</td><td class="new_deaths "></td><td class="total_recovered">11</td><td class="active_cases">0</td><td class="serious_cases"></td></tr>
+                    <tr><td class="country_name">UAE</td><td class="total_cases">37,642</td><td class="new_cases "></td><td class="total_deaths">274</td><td class="new_deaths "></td><td class="total_recovered">20,337</td><td class="active_cases">17,031</td><td class="serious_cases">1</td></tr>
+                    <tr><td class="country_name">Uganda</td><td class="total_cases">593</td><td class="new_cases ne">+36</td><td class="total_deaths"></td><td class="new_deaths "></td><td class="total_recovered">82</td><td class="active_cases">511</td><td class="serious_cases"></td></tr>
+                    <tr><td class="country_name">UK</td><td class="total_cases">284,868</td><td class="new_cases ne">+1,557</td><td class="total_deaths">40,465</td><td class="new_deaths de">+204</td><td class="total_recovered"></td><td class="active_cases"></td><td class="serious_cases">604</td></tr>
+                    <tr><td class="country_name">Ukraine</td><td class="total_cases">26,514</td><td class="new_cases ne">+550</td><td class="total_deaths">777</td><td class="new_deaths de">+15</td><td class="total_recovered">11,812</td><td class="active_cases">13,925</td><td class="serious_cases">301</td></tr>
+                    <tr><td class="country_name">Uruguay</td><td class="total_cases">834</td><td class="new_cases "></td><td class="total_deaths">23</td><td class="new_deaths "></td><td class="total_recovered">721</td><td class="active_cases">90</td><td class="serious_cases">4</td></tr>
+                    <tr><td class="country_name">USA</td><td class="total_cases">1,976,055</td><td class="new_cases ne">+10,347</td><td class="total_deaths">111,656</td><td class="new_deaths de">+266</td><td class="total_recovered">739,704</td><td class="active_cases">1,124,695</td><td class="serious_cases">17,011</td></tr>
+                    <tr><td class="country_name">Uzbekistan</td><td class="total_cases">4,064</td><td class="new_cases ne">+57</td><td class="total_deaths">17</td><td class="new_deaths de">+1</td><td class="total_recovered">3,268</td><td class="active_cases">779</td><td class="serious_cases">13</td></tr>
+                    <tr><td class="country_name">Vaican City</td><td class="total_cases">12</td><td class="new_cases "></td><td class="total_deaths"></td><td class="new_deaths "></td><td class="total_recovered">2</td><td class="active_cases">10</td><td class="serious_cases"></td></tr>
+                    <tr><td class="country_name">Venezuela</td><td class="total_cases">2,145</td><td class="new_cases "></td><td class="total_deaths">20</td><td class="new_deaths "></td><td class="total_recovered">334</td><td class="active_cases">1,791</td><td class="serious_cases"></td></tr>
+                    <tr><td class="country_name">Vietnam</td><td class="total_cases">329</td><td class="new_cases ne">+1</td><td class="total_deaths"></td><td class="new_deaths "></td><td class="total_recovered">307</td><td class="active_cases">22</td><td class="serious_cases">1</td></tr>
+                    <tr><td class="country_name">Western Sahara</td><td class="total_cases">9</td><td class="new_cases "></td><td class="total_deaths">1</td><td class="new_deaths "></td><td class="total_recovered">6</td><td class="active_cases">2</td><td class="serious_cases"></td></tr>
+                    <tr><td class="country_name">Yemen</td><td class="total_cases">469</td><td class="new_cases "></td><td class="total_deaths">111</td><td class="new_deaths "></td><td class="total_recovered">23</td><td class="active_cases">335</td><td class="serious_cases"></td></tr>
+                    <tr><td class="country_name">Zambia</td><td class="total_cases">1,089</td><td class="new_cases "></td><td class="total_deaths">7</td><td class="new_deaths "></td><td class="total_recovered">912</td><td class="active_cases">170</td><td class="serious_cases">1</td></tr>
+                    <tr><td class="country_name">Zimbabwe</td><td class="total_cases">265</td><td class="new_cases "></td><td class="total_deaths">4</td><td class="new_deaths "></td><td class="total_recovered">33</td><td class="active_cases">228</td><td class="serious_cases"></td></tr>
+                    <tr>
+                        <td class="total">Total:</td><td class="total_cases">6,915,119</td><td class="new_cases ne">+74,798</td><td class="total_deaths">399,938</td><td class="new_deaths de">+2,492</td><td class="total_recovered">3,384,826</td><td class="active_cases">3,130,355</td><td class="serious_cases">53,595</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="end"></div>
+        </div>
+
+        <!-- Footer start -->
+        <footer>
+            <div class="inner_footer_first">
+                <h3 class="footer_heading">Coronavirus (COVID-19) Disease</h3>
+                <p class="footer_details">Coronaviruses are a family of viruses that range from the common cold to MERS coronavirus, which is Middle East Respiratory Syndrome coronavirus and SARs, Severe acute respiratory syndrome coronavirus. Corona viruses are circulating in animals and some of these coronaviruses have the capability of transmitting between animals and humans. We call that a spillover event.Corona viruses are circulating in animals and some of these coronaviruses have the capability of transmitting between animals and humans. We call that a spillover event.</p>
+            </div>
+            <div class="inner_footer_second">
+                <h3 class="footer_heading fh2">Do You Know About That</h3>
+                <p class="footer_links"><a class="fl" href="newsroom.html" target="_blank">Daily News Details.</a></p>
+                <p class="footer_links"><a class="fl" href="information.html">Important Information.</a></p>
+                <p class="footer_links"><a class="fl" href="worldmeter.html">World Meter Facts.</a></p>
+                <p class="footer_links"><a class="fl" href="emergenciescontact.html">All Emergencies Contact.</a></p>
+            </div>
+            <div class="inner_footer_third">
+                <h3 class="footer_heading fh3">Social Connectivity</h3>
+                <a class="fl" href="https://twitter.com/surajt26" target="_blank"><p class="footer_links_third"><svg class="social_svg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="svg-inline--fa fa-twitter fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>Twitter</p></a>
+                <a class="fl" href="https://www.facebook.com/surajt26/" target="_blank"><p class="footer_links_third"><svg class="social_svg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook" class="svg-inline--fa fa-facebook fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg>Facebook</p></a>
+                <a class="fl" href="https://www.instagram.com/surajt26/" target="_blank"><p class="footer_links_third"><svg class="social_svg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" class="svg-inline--fa fa-instagram fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>Instagram</p></a>
+                <a class="fl" href="https://www.linkedin.com/in/surajt26/" target="_blank"><p class="footer_links_third"><svg class="social_svg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin-in" class="svg-inline--fa fa-linkedin-in fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>Linkedin</p></a>
+            </div>
+            <div class="line">
+                <p class="bottom_details">&#169 2020 My Website. All rights reserved | Designed and Developed by Suraj KY</p>
+            </div>
+        </footer>
+        <!-- Footer end -->
+
+        <script>
+            $(document).ready(function(){
+              // Add smooth scrolling to all links
+              $("a").on('click', function(event) {
+            
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                  // Prevent default anchor click behavior
+                  event.preventDefault();
+            
+                  // Store hash
+                  var hash = this.hash;
+            
+                  // Using jQuery's animate() method to add smooth page scroll
+                  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                  $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                  }, 1000, function(){
+               
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                  });
+                } // End if
+              });
+            });
+        </script>
+
+    </body>
+    <!-- Body End -->
+
+</html>
